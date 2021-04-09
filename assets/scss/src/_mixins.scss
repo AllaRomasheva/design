@@ -1,0 +1,107 @@
+@mixin make-helpers($i:null,$size:0){
+  .p-#{$i}{
+    padding:$size;
+  }
+  .py-#{$i}{
+    padding-top:$size;
+    padding-bottom:$size;
+  }
+  .px-#{$i}{
+    padding-right:$size;
+    padding-left:$size;
+  }
+  .pb-#{$i}{
+    padding-bottom:$size;
+  }
+  .pt-#{$i}{
+    padding-top:$size;
+  }
+  .pr-#{$i}{
+    padding-right:$size;
+  }
+  .pl-#{$i}{
+    padding-left:$size;
+  }
+  .m-#{$i}{
+    margin:$size;
+  }
+  .my-#{$i}{
+    margin-top:$size;
+    margin-bottom:$size;
+  }
+  .mx-#{$i}{
+    margin-right:$size;
+    margin-left:$size;
+  }
+  .mb-#{$i}{
+    margin-bottom:$size;
+  }
+  .mt-#{$i}{
+    margin-top:$size;
+  }
+  .mr-#{$i}{
+    margin-right:$size;
+  }
+  .ml-#{$i}{
+    margin-left:$size;
+  }
+}
+
+@mixin hover{
+  &:hover{
+    @content;
+  }
+}
+
+@mixin hover-focus-active {
+  &:hover,&:focus,&:active{
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  &:hover,&:focus{
+    @content;
+  }
+}
+
+@mixin active {
+  &.active{
+    @content;
+  }
+}
+
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin phone-xs {
+  @media screen and (max-width:$xs-min){
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width:$sm-min){
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width:$md-min){
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (max-width:$lg-min){
+    @content;
+  }
+}
+
+@mixin desktop-xl {
+  @media screen and (max-width:$xl-min){
+    @content;
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "@context": "http://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kyiv, Kyiv City, Ukraine"
+      },
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "Oplata.com",
+          "url": "https://www.linkedin.com/company/oplata-com?trk=ppro_cprof"
+        },
+        {
+          "@type": "Organization",
+          "name": "ООО \"ЛІГА:ЗАКОН\"",
+          "url": "https://www.linkedin.com/company/%D0%BB%D0%B8%D0%B3%D0%B0%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD?trk=ppro_cprof"
+        },
+        {
+          "@type": "Organization",
+          "name": "Freelance Web Development",
+          "url": "https://www.linkedin.com/company/freelance-web-development-vn?trk=ppro_cprof"
+        }
+      ],
+      "awards": [],
+      "image": {
+        "@type": "ImageObject",
+        "contentUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQFqzG89EOaacQ/profile-displayphoto-shrink_200_200/0/1538051757507?e=1622678400&v=beta&t=y6LaXL0wgfNmWX-2ONhtKyI7Iagxwr_6o-NLn7nMYZ8"
+      },
+      "jobTitle": [
+        "Senior JavaScript Developer"
+      ],
+      "name": "Stepan Kosatyi",
+      "sameAs": "https://ua.linkedin.com/in/kosatyi",
+      "url": "https://ua.linkedin.com/in/kosatyi",
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Fondy.eu",
+          "url": "https://www.linkedin.com/company/fondy?trk=ppro_cprof"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "headline": "Alla Romasheva",
+      "description": "Jkasjdkjaskldj aksjdlakjsldk",
+      "url": "https://ua.linkedin.com/in/kosatyi",
+      "author": {
+        "@type": "Person",
+        "name": "Alla Romasheva"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://localhost:4004/assets/favicon/android-icon-192x192.png"
+        },
+        "name": "Alla Romasheva"
+      },
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Stepan Kosatyi"
+      }
+    }
+  ]
+}
+
+
+{
+  "@context": "https://schema.org",
+  "image": {
+    "height": 512,
+    "width": 512,
+    "url": "https://i.imgur.com/PR5RBiv.jpg",
+    "@type": "imageObject"
+  },
+  "@type": "WebSite",
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kosatyi.com/assets/favicon/android-chrome-192x192.png"
+    },
+    "name": "Stepan Kosatyi"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Stepan Kosatyi"
+  },
+  "headline": "Stepan Kosatyi - Full Stack Developer",
+  "sameAs": [
+    "https://twitter.com/kosatyi",
+    "https://facebook.com/kosatyi",
+    "https://www.pinterest.com/kosatyi/",
+    "https://www.linkedin.com/in/kosatyi/",
+    "https://ua.linkedin.com/in/kosatyi",
+    "https://www.instagram.com/kosatyi/",
+    "https://github.com/kosatyi",
+    "https://www.behance.net/kosatyi",
+    "https://dribbble.com/kosatyi",
+    "https://medium.com/@kosatyi"
+  ],
+  "url": "https://kosatyi.com/",
+  "description": "Stepan Kosatyi is Full Stack Developer from Kyiv, Ukraine. Resourceful and competent JavaScript/PHP developer with great experience in the design and coding.",
+  "name": "Stepan Kosatyi"
+}
+
+
+{
+  "image": {
+    "height": 600,
+    "width": 1000,
+    "url": "https://i.imgur.com/yXIvtAV.jpg",
+    "@type": "imageObject"
+  },
+  "@type": "BlogPosting",
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kosatyi.com/assets/favicon/android-chrome-192x192.png"
+    },
+    "name": "Stepan Kosatyi"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kosatyi.com/blog/2021/02/12/b2b-trade-finance-payments-vc-funding-fintechs.html"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Stepan Kosatyi"
+  },
+  "headline": "B2B Trade, Finance And Payments Drive VC Funding For FinTechs",
+  "dateModified": "2021-02-12T00:00:00+00:00",
+  "datePublished": "2021-02-12T00:00:00+00:00",
+  "url": "https://kosatyi.com/blog/2021/02/12/b2b-trade-finance-payments-vc-funding-fintechs.html",
+  "description": "The B2B venture capital boom continues this week with about $118 million in combined funding for a wide variety of FinTechs. Investors dug their heels into B2B trade, financing and payments solutions for small and medium-sized businesses (SMBs), with eCommerce-as-a-Service taking the top spot this week. Plus, more funding is on the way for a FinTech applying the buy now, pay later (BNPL) model to B2B transactions.",
+  "@context": "https://schema.org"
+}

@@ -1,0 +1,111 @@
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+exclude:
+  - .idea
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfil.lock
+  - gulpfile.js
+
+environment: production
+repository: kosatyi/romasheva.design
+
+#Others
+markdown: kramdown
+port: 4004
+
+# Setup
+title: Alla Romasheva
+summary: UX/UI designer
+logo: /assets/favicon/android-icon-192x192.png
+url: https://romasheva.com
+baseurl: ''
+email: alla@romasheva.com
+analytics: UA-37629144-3
+languages:
+  en: en-US
+  uk: uk-UA
+  ru: ru-RU
+
+social:
+  name: Alla Romasheva (Алла Ромашева)
+  links:
+    - https://www.facebook.com/romasheva.design
+    - https://www.instagram.com/romasheva.design/
+    - https://twitter.com/aalliskaa
+    - https://www.linkedin.com/in/romasheva/
+    - https://www.behance.net/romasheva
+    - https://dribbble.com/romasheva
+    - https://ua.linkedin.com/in/алла-ромашева-051390174
+    - https://github.com/allaromasheva
+    - https://www.pexels.com/@alla-romasheva-3820560/
+  profiles:
+    facebook: https://www.facebook.com/100024493295482
+    twitter: https://twitter.com/AllaRomasheva
+    instagram: https://www.instagram.com/romasheva.design/
+    linkedin: https://www.linkedin.com/in/алла-ромашева-051390174/
+    behance: https://www.behance.net/romasheva
+    pinterest: https://www.pinterest.com/romasevaalla38/
+    dribbble: https://dribbble.com/romasheva
+    github: https://github.com/allaromasheva
+    pexels: https://www.pexels.com/@alla-romasheva-3820560/
+  contacts:
+    telegram: https://telegram.com/
+    skype: https://viber.com/
+    messenger: https://messenger.com/
+
+twitter:
+  username: aalliskaa
+
+facebook:
+  publisher: 100024493295482
+  chat: 100930458520274
+
+author:
+  name: Alla Romasheva
+  url: https://romasheva.com/
+  twitter: aalliskaa
+  image:
+    path: /assets/images/alla.romasheva.jpeg
+    height: 512
+    width: 512
+
+defaults:
+
+  - scope:
+      path: ''
+    values:
+      lang: 'en'
+      layout: 'default'
+
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+      permalink: '/:categories/:title.html'
+
+  - scope:
+      path: 'en'
+    values:
+      lang: 'en'
+      alternate: true
+
+  - scope:
+      path: 'ru'
+    values:
+      lang: 'ru'
+      alternate: true
+
+  - scope:
+      path: 'uk'
+    values:
+      lang: 'uk'
+      alternate: true

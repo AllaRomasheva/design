@@ -1,0 +1,34 @@
+{
+  "name": "romasheva.design",
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.15.2",
+    "bootstrap": "^5.0.0-beta2",
+    "jquery.control": "github:kosatyi/jquery.control",
+    "typed.js": "^2.0.11"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "browserify-shim": "^3.8.14",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-touch-fd": "^2.0.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "browserify-shim": {
+    "jquery": "global:$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+@import "src/rfs";
+@import "src/mixins";
+@import "src/variables";
+
+@include make-helpers(auto,auto);
+
+@for $i from 0 through 10 {
+  @include make-helpers($i,0.25rem * $i);
+}
+
+@each $i, $value in $font-sizes {
+  h#{$i},.fs-#{$i}{
+    @include font-size($value);
+  }
+}
+
+.small{
+  font-size:var(--font-size-small);
+}
+.thin{
+  font-weight:var(--font-weight-thin);
+}
+.normal{
+  font-weight:var(--font-weight-normal);
+}
+.bold{
+  font-weight:var(--font-weight-bold);
+}
+
+.h-1{
+  height:1px;
+}
+
+.text-center{
+  text-align:center;
+}
+.text-right{
+  text-align:right;
+}
+.text-left{
+  text-align:left;
+}
+
+.overflow-hidden{
+  overflow:hidden;
+}
+
+.text-truncate{
+  white-space: nowrap;
+  display:block;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.nowrap{
+  white-space: nowrap;
+}
+
+.hide{
+  display:none !important;
+}
