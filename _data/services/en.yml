@@ -1,19 +1,37 @@
-- title: Graphic Design
+- title: UX audit
   summary: |
-    Propel business growth with Intellias UI design services for a well-thought-out visual identity that will
-    help you stand out from competitors and make a lasting impression on customers
+    By in-depth analysis of competitors and target audience, we develop a mental profile of your users,
+    and a map of the user's journey from the first contact with your product to the final destination.
+    Based on these indicators, we create a web page prototype architecture for your product.
 
-- title: Brand & Logo Design
+- title: Prototyping. UI design
   summary: |
-    We will help you start a dialogue with your customers, making sure the image and feel of your product is deeply
-    fixed in their hearts and minds with a distinctive identity and a clear message.
+    Based on the data from the UX audit, we create a sketch and develop the architecture of a prototype web page for a visual
+    demonstration of the design structure to the customer. We conduct initial testing of product design to identify possible
+    Hot Spots - Usage Errors.
 
-- title: Web Design
+- title: Brand design
   summary: |
-    Run your business more effectively with platform-specific adaptive and responsive web designs, adapted
-    to each device type, needs, and environment with UX design services
+    We discuss and create a logo, logo book, exclusive with a clear message and recognizable style of your product,
+    color scheme, fonts, icons and other details.
+    We create a full-fledged Brandbook - which contains a set of rules for the company's corporate identity and rules
+    on its use.
 
-- title: App Design
+- title: Graphic design
   summary: |
-    Ensure immersive customer experience and increase the efficiency of your multi-channel presence through intuitive
-    and streamlined mobile designs
+    We combine aesthetics and functionality.
+    Creative and thoughtful graphic design allows you to present your product with dignity,
+    achieve greater visibility and increase the number of sales
+    We develop the design of office, advertising and printed products that will accompany brand.
+
+- title: Web design
+  summary: |
+    We develop design optimization for different platforms and adaptive versions for different types of devices.
+    As a result, we get an image of a ready-made web page design, which we present
+    to the customer and after approval these files are sent to the developer.
+
+- title: Application design
+  summary: |
+    To increase the efficiency of interaction with your customers, you need to develop a mobile application-
+    this is a mobile version of your site with additional features.
+    We develop a thoughtful and convenient application design based on your style, or create a completely new one.
