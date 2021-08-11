@@ -84,6 +84,14 @@ defaults:
     values:
       lang: 'en'
       layout: 'default'
+      alternate:
+        en: '/en/'
+        ru: '/ru/'
+        uk: '/uk/'
+      image:
+        path: '/assets/images/cover.jpg'
+        width: '1000'
+        height: '600'
 
   - scope:
       path: ''
@@ -96,16 +104,13 @@ defaults:
       path: 'en'
     values:
       lang: 'en'
-      alternate: true
 
   - scope:
       path: 'ru'
     values:
       lang: 'ru'
-      alternate: true
 
   - scope:
       path: 'uk'
     values:
       lang: 'uk'
-      alternate: true

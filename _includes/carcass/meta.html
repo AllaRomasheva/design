@@ -1,10 +1,14 @@
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
-{% if page.seo == false %}
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=5,initial-scale=1">
+{%- if page.seo == false %}
 <title>{{ page.title }}</title>
-{% seo title=false %}{% else %}{% seo %}{% endif %}
-{% if page.alternate %}
-{% for item in page.alternate %}
+{% seo title=false %}
+{%- else %}
+{%- seo %}
+{%- endif %}
+{%- if page.alternate %}
+{%- for item in page.alternate %}
 <link rel="alternate" href="{{ item[1] | absolute_url  }}" hreflang="{{ item[0] }}">
-{% endfor %}
-{% endif %}
+{%- endfor %}
+{%- endif %}
+{% include carcass/favicon.html %}
