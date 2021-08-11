@@ -1,42 +1,66 @@
 const {gulp,jsBundler,scssBundler,svgBundler} = require('gulp2go');
+
+
 const replace = require('gulp-string-replace');
-const favicons = require("favicons").stream;
+const favicons = require("favicons");
+const stream  = favicons.stream;
+const config  = favicons.config;
 const through = require('through2');
+const fs = require('fs');
+
 
 gulp.task('favicon', function(){
     const color = '#4e4cbd';
     const filename = 'favicon.html';
-    return gulp.src('assets/favicon.svg')
+    const iconFile = 'assets/favicon.svg';
+    const iconPath = 'assets/favicon';
+    const appName  = 'Alla Romasheva Design';
+    const appShortName = 'Romasheva Design'
+    const url = 'https://romasheva.design/';
+    const filterFile = () => {
+        return through.obj( (file,enc, cb) => {
+            if( file.relative === filename ){
+                fs.unlinkSync( file.path );
+                cb(null, file);
+            } else {
+                cb(null);
+            }
+        })
+    };
+    return gulp.src(iconFile)
         .pipe(replace('currentColor',color))
-        .pipe(favicons({
-            appName: "Alla Romasheva Design",
-            appShortName: "Romasheva Design",
+        .pipe(favicons.stream({
+            appName: appName,
+            appShortName: appShortName,
             appDescription: "",
             background: color ,
             path: "/assets/favicon/",
-            url: "https://romasheva.design/",
+            theme_color: color,
+            appleStatusBarStyle: 'default',
+            url: url,
             display: "standalone",
             orientation: "portrait",
             scope: "/",
             start_url: "/?homescreen=1",
             version: 1.0,
-            logging: false,
-            html: filename,
             pipeHTML: true,
-            replace: true
+            replace: true,
+            icons: {
+                android: true,
+                appleIcon: true,
+                appleStartup: false,
+                coast: true,
+                favicons: true,
+                firefox: true,
+                windows: true,
+                yandex: false
+            }
+        },(html)=>{
+            console.log(html.join('\n'));
         }))
-        .pipe(gulp.dest('assets/favicon'))
-        .pipe(function(){
-            return through.obj(function(file,enc, cb){
-                if( file.relative === filename ){
-                    cb(null, file);
-                } else {
-                    cb(null);
-                }
-            })
-        }())
-        .pipe(gulp.dest('_includes/carcass'));
+        .pipe(gulp.dest(iconPath));
 });
+
 
 gulp.task('bootstrap', function(){
     return gulp.src('node_modules/bootstrap/scss/**/*.*')
