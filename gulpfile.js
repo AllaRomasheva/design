@@ -1,91 +1,70 @@
-var gulp     = require('gulp');
-var sass     = require('gulp-sass');
-var svgSprite  =  require('gulp-svg-sprite');
-var rename = require("gulp-rename");
+const {gulp,jsBundler,scssBundler,svgBundler} = require('gulp2go');
+const replace = require('gulp-string-replace');
+const favicons = require("favicons").stream;
+const through = require('through2');
 
-var uglify     = require('gulp-uglify');
-var concat     = require('gulp-concat');
-var sourcemaps = require('gulp-sourcemaps');
-var browserify = require('gulp-browserify');
-var del        = require('del');
-var view       = require('jquery.control/view');
-var cleanCSS = require('gulp-clean-css');
-var autoprefixer = require('gulp-autoprefixer');
-var touch = require('gulp-touch-fd');
-
+gulp.task('favicon', function(){
+    const color = '#4e4cbd';
+    const filename = 'favicon.html';
+    return gulp.src('assets/favicon.svg')
+        .pipe(replace('currentColor',color))
+        .pipe(favicons({
+            appName: "Alla Romasheva Design",
+            appShortName: "Romasheva Design",
+            appDescription: "",
+            background: color ,
+            path: "/assets/favicon/",
+            url: "https://romasheva.design/",
+            display: "standalone",
+            orientation: "portrait",
+            scope: "/",
+            start_url: "/?homescreen=1",
+            version: 1.0,
+            logging: false,
+            html: filename,
+            pipeHTML: true,
+            replace: true
+        }))
+        .pipe(gulp.dest('assets/favicon'))
+        .pipe(function(){
+            return through.obj(function(file,enc, cb){
+                if( file.relative === filename ){
+                    cb(null, file);
+                } else {
+                    cb(null);
+                }
+            })
+        }())
+        .pipe(gulp.dest('_includes/carcass'));
+});
 
 gulp.task('bootstrap', function(){
     return gulp.src('node_modules/bootstrap/scss/**/*.*')
         .pipe(gulp.dest('assets/scss/bootstrap'))
 });
 
-gulp.task('scss',function(){
-    return gulp.src('./assets/scss/*.scss')
-        .pipe(sass().on('error',sass.logError))
-        .pipe(autoprefixer())
-        .pipe(cleanCSS())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('assets/css'))
-        .pipe(touch());
-});
-
 gulp.task('sprite', function(){
-    return gulp.src('_includes/icons/**/*.svg')
-        .pipe(svgSprite({
-            mode: {
-                stack: {
-                    sprite: "./sprite.svg"
-                }
-            }
-        }))
-        .pipe(rename(function () {
-            return {
-                dirname: '',
-                basename: 'sprite',
-                extname: '.svg'
-            };
-        }))
-        .pipe(gulp.dest('assets/sprite'));
+    return svgBundler('assets/icons/**/*.svg','sprite.svg','assets');
 });
 
-gulp.task('js:app', function(){
-    return gulp.src([
-        'assets/build.js'
-    ]).pipe(browserify({
-        paths: [
-            './node_modules',
-            './assets'
-        ]
-    })).pipe(rename('index.js'))
-        .pipe(gulp.dest('assets/js'))
-        .pipe(sourcemaps.init())
-        .pipe(uglify())
-        .pipe(rename({extname:'.min.js'}))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('assets/js'))
-        .pipe(touch());
+gulp.task('scss',function(){
+    return scssBundler('./assets/scss/*.scss','assets/css');
 });
 
+gulp.task('js', function(){
+    return jsBundler('assets/src/index.js','app.js','assets/js',{
+        babelify:{
 
-gulp.task('js:lib', function(){
-    return gulp.src([
-        'node_modules/jquery/dist/jquery.js'
-    ]).pipe(concat('vendor.js'))
-        .pipe(gulp.dest('assets/js'))
-        .pipe(sourcemaps.init())
-        .pipe(uglify())
-        .pipe(rename({extname:'.min.js'}))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('assets/js'))
-        .pipe(touch());
+        },
+        schemify:{
+            "jquery": "$"
+        }
+    });
 });
-
-gulp.task('js', gulp.series(['js:lib','js:app']))
 
 gulp.task('watch', function(){
     gulp.watch(['assets/scss/**/*.scss'], gulp.series(['scss']));
-    gulp.watch(['assets/build.js','assets/src/**/*.js'], gulp.series(['js:app']));
+    gulp.watch(['assets/build.js','assets/src/**/*.js'], gulp.series(['js']));
 });
-
 
 gulp.task('default', gulp.series(['scss','sprite','js']));
