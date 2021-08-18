@@ -10,7 +10,9 @@
         </div>
         <div class="app-card-back">
             <div class="app-card-inner fx fx-column">
-                {{ item.content | markdownify }}
+                <div class="app-card-wrapper" data-flip="">
+                    {{ item.content | markdownify }}
+                </div>
             </div>
         </div>
     </div>

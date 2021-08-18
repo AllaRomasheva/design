@@ -1,0 +1,30 @@
+::-webkit-scrollbar {
+  width: var(--scrollbar,8px);
+  height: var(--scrollbar,8px);
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border: 0 none inherit;
+  border-radius: 50px;
+  &:hover {
+    background-color: var(--color-pink);
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

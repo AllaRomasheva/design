@@ -6,9 +6,13 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 var _bind = _interopRequireDefault(require("../utils/bind"));
 
 (0, _bind["default"])(document, 'click', '[data-flip]', function (ev) {
-  ev.preventDefault();
-  ev.target.closest('[data-card]');
-  console.log(ev.target.closest('[data-card]'));
+  var el = ev.target;
+  var card = el.closest('[data-card]');
+  card.classList.toggle('active');
+
+  if (el.hasAttribute('data-flip')) {
+    ev.preventDefault();
+  }
 });
 
 },{"../utils/bind":5,"@babel/runtime/helpers/interopRequireDefault":7}],2:[function(require,module,exports){

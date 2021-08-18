@@ -714,6 +714,21 @@ body {
   transform: translateZ(5rem);
   padding: var(--gap);
 }
+.app-card-wrapper {
+  overflow-y: auto;
+  margin-right: calc(var(--gap)/-1);
+  padding-right: var(--gap);
+}
+.app-card-close {
+  z-index: 9;
+  border-radius: 0.5rem;
+  background-color: #dfdfdf;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0.5rem;
+  right: 0.5rem;
+}
 .app-card-button {
   color: #fff;
   text-decoration: none;

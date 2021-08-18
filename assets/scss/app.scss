@@ -258,6 +258,21 @@
     transform: translateZ(5rem);
     padding:var(--gap);
   }
+  &-wrapper{
+    overflow-y:auto;
+    margin-right:calc(var(--gap)/-1);
+    padding-right:var(--gap);
+  }
+  &-close{
+    z-index:9;
+    border-radius: .5rem;
+    background-color:#dfdfdf;
+    position: absolute;
+    display:block;
+    cursor:pointer;
+    top:.5rem;
+    right: .5rem;
+  }
   &-button {
     color:#fff;
     text-decoration: none;

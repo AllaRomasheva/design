@@ -1,7 +1,10 @@
 import bind from '../utils/bind';
 
 bind(document,'click','[data-flip]',function(ev){
-    ev.preventDefault();
-    ev.target.closest('[data-card]')
-    console.log(ev.target.closest('[data-card]'));
-})
+    const el = ev.target;
+    const card = el.closest('[data-card]');
+    card.classList.toggle('active');
+    if( el.hasAttribute('data-flip') ){
+        ev.preventDefault();
+    }
+});
