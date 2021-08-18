@@ -1,32 +1,38 @@
 - title: UX audit
+  cover: /assets/cover/audit.jpeg
   summary: |
     By in-depth analysis of your competitors and target audience, I will develop a mental profile of your users,
     and a map of the user's journey from the first contact with your product to the final destination.
 
 - title: Prototyping. UI design
+  cover: /assets/cover/prototyping.jpeg
   summary: |
     Based on the data from the UX audit, I create a sketch and develop a prototype of a web page for a visual
     demonstration of the design structure. I conduct initial design testing to identify possible
     errors in use.
 
 - title: Brand design
+  cover: /assets/cover/brand.jpeg
   summary: |
     I will develop an exclusive, recognizable with a clear message style for your product: logo, logo book,
     color scheme, fonts, icons and other details.
     As a result, we will create a full-fledged Brandbook, which will contain the rules for using the company's corporate identity.
 
 - title: Graphic design
+  cover: /assets/cover/graphic.jpg
   summary: |
     Creative and thoughtful graphic design will allow you to present your product with dignity,
     achieve greater brand awareness and sales.
     Designing a well-thought-out visual identity for your product that will accompany your brand.
 
 - title: Web design
+  cover: /assets/cover/webserve.png
   summary: |
     To make managing your business more convenient and efficient, I develop web design adaptives and optimize
     your design for different types of devices, needs and environments.
 
 - title: Application design
+  cover: /assets/cover/apps.png
   summary: |
     I develop an intuitive and optimized mobile application design to increase the efficiency of interaction with
     your clients.

@@ -20,7 +20,7 @@
     <div class="app-layout app-rows">
         <div>
             <h2 class="fs-2 m-0">{% include i18n id="Services" %}</h2>
-            <p class="m-0">{% include i18n id="If you need an app designed from scratch or an upgrade for an existing interface" %}</p>
+            <p class="m-0">{% include i18n id="I create solutions based on the real needs of the client" %}</p>
         </div>
         <div class="app-grid">
             {% assign list = site.data.services[page.lang] | default: site.data.services.en %}
@@ -64,7 +64,7 @@
             </div>
             <div>
                 <h2 class="fs-2">{% include i18n id="Follow me" %}</h2>
-                <p>{% include i18n id="Places where you can follow my life stream" %}:</p>
+                <p>{% include i18n id="Places where you can follow me and my work" %}:</p>
                 <div class="app-inline">
                     {% for item in site.social.profiles %}
                     {% capture name %}{{item[0]}}-square{% endcapture %}
@@ -76,7 +76,7 @@
             </div>
             <div>
                 <h2 class="fs-2">{% include i18n id="Hire me" %}</h2>
-                <p>{% include i18n id="If you have an open project or just need a consultation, you can contact me via" %}:</p>
+                <p>{% include i18n id="Here you can see my resume" %}:</p>
                 <div class="fx fx-wrap">
                     <a href="https://romasheva.cv/{{ page.lang }}/" class="bold">{% include i18n id="Resume Page" %}</a>
                 </div>

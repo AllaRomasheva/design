@@ -1,4 +1,5 @@
 - title: UI/UX Audit
+  cover: /assets/cover/uiaudit.png
   summary: |
     Through in-depth research, I will analyze your website, application,
     or a product and suggest important changes to improve the efficiency of your business.
@@ -6,6 +7,7 @@
     asdjahdjahdjashd
 
 - title: Research & Prototyping
+  cover: /assets/cover/prototyp.png
   summary: |
     Researching your target audience: their habits and needs. I will create a clear visual representation of your idea from a sketch
     to a full-fledged prototype.
@@ -13,6 +15,7 @@
     asdjahdjahdjashd
 
 - title: Graphic Design
+  cover: /assets/cover/graphicdesign.png
   summary: |
     I will create a well-thought-out visual identity for your product. It will help you stand out from the competition and generate
     indelible impression.
@@ -20,6 +23,7 @@
     asdjahdjahdjashd
 
 - title: Brand/Logo Design
+  cover: /assets/cover/branddesign.png
   summary: |
     I will help you start a dialogue with your clients. Create a company image with a clear message and unique features for
     perception of your product.
@@ -27,11 +31,13 @@
 
 
 - title: Web Design
+  cover: /assets/cover/webdesign.png
   summary: |
     I will make the management of your business more convenient and efficient with the help of optimized responsive web design.
     for each type of device, needs and environment.
 
 - title: App Design
+  cover: /assets/cover/appdesign.png
   summary: |
     You can create a customer experience and improve the efficiency of your interactions by using an intuitive
     clear and optimized mobile application.
