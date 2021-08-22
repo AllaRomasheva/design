@@ -17,6 +17,7 @@ gulp.task('favicon', function(){
     const appName  = 'Alla Romasheva Design';
     const appShortName = 'Romasheva Design'
     const url = 'https://romasheva.design/';
+    const filePath = url.concat(iconPath);
     const filterFile = () => {
         return through.obj( (file,enc, cb) => {
             if( file.relative === filename ){
@@ -34,7 +35,7 @@ gulp.task('favicon', function(){
             appShortName: appShortName,
             appDescription: "",
             background: color ,
-            path: "/assets/favicon/",
+            path: filePath,
             theme_color: color,
             appleStatusBarStyle: 'default',
             url: url,
@@ -43,6 +44,7 @@ gulp.task('favicon', function(){
             scope: "/",
             start_url: "/?homescreen=1",
             version: 1.0,
+            html: filename ,
             pipeHTML: true,
             replace: true,
             icons: {
