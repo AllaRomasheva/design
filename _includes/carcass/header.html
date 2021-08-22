@@ -1,10 +1,12 @@
 <div class="app-header-container" id="home"></div>
 <div class="app-header fx fx-ai-center">
     <div class="app-progress-bar"></div>
-    <div class="app-layout fx-row fx-ai-center">
+    <div class="app-header-layout">
         <h1 class="app-header-logo"><a href="{{ '#home' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}" data-rel="banner">Alla Romasheva</a></h1>
-        <h3 class="app-header-link"><a href="{{ '#services' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Services" %}</a></h3>
-        <h3 class="app-header-link"><a href="{{ '#portfolio' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Portfolio" %}</a></h3>
-        <h3 class="app-header-link"><a href="{{ '#contacts' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Contacts" %}</a></h3>
+        <div class="app-header-nav">
+            <h3 class="app-header-link"><a href="{{ '#services' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Services" %}</a></h3>
+            <h3 class="app-header-link"><a href="{{ '#portfolio' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Portfolio" %}</a></h3>
+            <h3 class="app-header-link"><a href="{{ '#contacts' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Contacts" %}</a></h3>
+        </div>
     </div>
 </div>

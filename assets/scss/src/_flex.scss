@@ -38,3 +38,14 @@
 .fx-jc-center{
   justify-content: center;
 }
+.fx-jc-end{
+  justify-content: flex-end;
+}
+.fx-jc-start{
+  justify-content: flex-start;
+  &-phone{
+    @include phone{
+      justify-content: flex-start;
+    }
+  }
+}

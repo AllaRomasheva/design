@@ -1,9 +1,10 @@
 <div class="app-footer">
     <div class="app-layout app-rows">
-        <div class="fx-row fx-ai-center">
-            <div>© 2018 - {{ "now" | date: "%Y" }} {% include i18n id=site.title %}. {% include i18n id="All Rights Reserved" %}.</div>
-            <div class="m-auto"></div>
-            <div class="fx-row fx-ai-center">
+        <div class="app-grid">
+            <div>
+                © 2018 - {{ "now" | date: "%Y" }} {% include i18n id=site.title %}. {% include i18n id="All Rights Reserved" %}.
+            </div>
+            <div class="fx-row fx-ai-center fx-jc-end fx-jc-start-phone">
                 <span class="nowrap c-secondary mr-2">{% include i18n id="Choose language" %}:</span>
                 <a href="{{ '/uk/' | absolute_url }}" hreflang="uk-UA" class="icon flag ml-2">{% include icon name='flag-uk' %}</a>
                 <a href="{{ '/en/' | absolute_url }}" hreflang="en-US" class="icon flag ml-2">{% include icon name='flag-en' %}</a>
