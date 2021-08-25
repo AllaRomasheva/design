@@ -1,10 +1,19 @@
-- title: UI/UX Audit
+- title: UX Audit
   cover: /assets/cover/uiaudit.png
   summary: |
     Through in-depth research, I will analyze your website, application,
     or a product and suggest important changes to improve the efficiency of your business.
   content: |
-    asdjahdjahdjashd
+    This is an expert assessment of how your potential customers interact with your website / application, what they have
+    problems arise and what prevents the target action from being performed.
+    - An interview, during which we clarify the task and purpose of the project, concretize the problems that need to be solved.
+    - User research, identification of the target audience, study of their habits and desires, in order to
+      make your website/application easy to read.
+    - Researching the entire user journey on the site from the moment of the first contact to the final goal, in order to
+      make your site / application clear and easy to use.
+    - Analysis of the structure of the site / application, analysis of technical aspects: contrast, typography, content quality,
+      readability, analysis of navigation, button functionality, adaptive versions.
+    - A report with recommendations in which all found problems will be structured and recommendations for their elimination are given.
 
 - title: Research & Prototyping
   cover: /assets/cover/prototyp.png
@@ -12,7 +21,15 @@
     Researching your target audience: their habits and needs. I will create a clear visual representation of your idea from a sketch
     to a full-fledged prototype.
   content: |
-    asdjahdjahdjashd
+    Development of a prototype is an important design stage, its purpose is to show the structure of the future site / application,
+    check the navigation and correctly arrange the necessary elements and blocks.
+    - Concept check - will help the customer to see a complete picture of what the site / application will be in terms of structure and
+      functional. This is an irreplaceable thing when the customer has not yet fully decided what kind of functionality is needed and on which pages.
+      should be located. Careful planning at the prototyping stage will help to avoid mistakes and global changes at
+      final stages.
+    - Technical research will help test the usability of the site / application, validate navigation,
+      establish a clear interaction between pages and correctly arrange information, as well as understand if there are any errors
+      on the user's path and immediately find a solution.
 
 - title: Graphic Design
   cover: /assets/cover/graphicdesign.png
@@ -20,7 +37,18 @@
     I will create a well-thought-out visual identity for your product. It will help you stand out from the competition and generate
     indelible impression.
   content: |
-    asdjahdjahdjashd
+    This is another important way of visual communication between the user and your site / application / product, so you should
+    make sure that everything that surrounds the client when interacting with your product creates a comfortable environment, is convenient
+    for perception and gave the correct impression.
+    - At the start of the project, it is important to create comfortable conditions for the perception of information by your users, for this you should
+      take into account the less visible, but very important details: harmony and balance, hierarchy and rhythm, proportion and typography.
+    - Harmony and balance - proportion and balance give a sense of security and makes you feel comfortable
+      in the existing environment.
+    - Hierarchy and rhythm - it is serious to balance sizes, colors, order of presentation of information correctly
+      facilitates the general perception, allows you to control the impression of the audience, to attract and keep the client's attention on
+      the right place.
+    - Typography and readability - well-chosen typeface, clear text hierarchy and well-chosen colors -
+      make textual information easy and pleasant to read.
 
 - title: Brand/Logo Design
   cover: /assets/cover/branddesign.png
@@ -28,16 +56,49 @@
     I will help you start a dialogue with your clients. Create a company image with a clear message and unique features for
     perception of your product.
   content: |
+    Brand design is a set of attributes that distinguish your company from others and make it easily recognizable to customers.
+    To do this, you should develop a logo, corporate identity and ideology of your company and collect all this in a berndbook.
+    - A logo is a unique, laconic, recognizable symbol of your company / product; it is a trademark that
+      further will be associated with your brand.
+    - The corporate identity contains all the necessary visual and informational features of your brand: logo, color scheme,
+      fonts, graphics, illustrations, etc. - this will help make your company / product recognizable and distinguish among
+      competitors.
+    - A brand book is an internal corporate document that will help you carry out marketing and advertising activities,
+      will ensure the safety and correct use of your ideological principles and a single design concept with all
+      graphic elements.
 
 
 - title: Web Design
   cover: /assets/cover/webdesign.png
   summary: |
-    I will make the management of your business more convenient and efficient with the help of optimized responsive web design.
-    for each type of device, needs and environment.
+    I will make the design of your web page thoughtful, we will choose a solution that will
+    right for your business. I will make the use of your page convenient with
+    responsive web design optimized for each type of device.
+  content: |
+    Web design - it creates a visual image of your company / product on the Internet.
+    This is a way to familiarize your customers with your product in more detail and convey the necessary information in a way convenient for them.
+    - First, you need to determine the goals and objectives for creating a website in order to choose the right design solutions for solving
+      exactly your tasks.
+    - Develop site architecture, find out the list of necessary functions and sections, plan navigation so that your
+      the site was convenient to use and performed the necessary functions.
+    - To develop a visual design, choose colors, graphics, illustrations, photo materials, fonts, etc. - this is
+      will help to create your unique features interesting and recognizable, and create a comfortable environment for using your
+      site.
+    - Responsive design is also a necessary step. Adaptations for various types of devices should be developed for comfortable
+      the use of your site by users.
 
 - title: App Design
   cover: /assets/cover/appdesign.png
   summary: |
     You can create a customer experience and improve the efficiency of your interactions by using an intuitive
     clear and optimized mobile application.
+  content: |
+    Mobile application - will help you get a direct and convenient channel of communication with your customers, will help you profitably
+    to distinguish you among competitors as an advanced company that takes care of its customers and provides them with a more convenient and comfortable
+    way of interacting with the company / product.
+    - Well thought out interface - consider the habits of the users, the environment in which they will usually use
+      your application and convenient and simple navigation - so that the client gives preference to your application every time,
+      and therefore your company / product.
+    - The visual design of your application should be in line with the overall style of your brand, and have more interesting graphics.
+    - The main goal is to make convenient and well-thought-out functionality so that the user understands what he has to do
+      to get a service / product, so for this you need to make a route to the main goal as much as possible posts.
