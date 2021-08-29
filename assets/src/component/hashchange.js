@@ -1,6 +1,5 @@
-import debounce from '../utils/debounce';
-
-import bind from '../utils/bind';
+import {debounce} from '../utils/debounce';
+import {bind} from '../utils/bind';
 
 const regexp       = new RegExp(/^#[^ ]+$/);
 

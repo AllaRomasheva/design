@@ -1,11 +1,9 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+var _bind = require("../utils/bind");
 
-var _bind = _interopRequireDefault(require("../utils/bind"));
-
-(0, _bind["default"])(document, 'click', '[data-flip]', function (ev) {
+(0, _bind.bind)(document, 'click', '[data-flip]', function (ev) {
   var el = ev.target;
   var card = el.closest('[data-card]');
   card.classList.toggle('active');
@@ -15,14 +13,40 @@ var _bind = _interopRequireDefault(require("../utils/bind"));
   }
 });
 
-},{"../utils/bind":5,"@babel/runtime/helpers/interopRequireDefault":7}],2:[function(require,module,exports){
+},{"../utils/bind":6}],2:[function(require,module,exports){
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+var _find = require("../utils/find");
 
-var _debounce = _interopRequireDefault(require("../utils/debounce"));
+var cover = function cover(el) {
+  var url = el.getAttribute('data-cover');
+  el.removeAttribute('data-cover');
+  el.style.backgroundImage = "url(".concat(url, ")");
+  el.style.backgroundSize = 'cover';
+};
 
-var _bind = _interopRequireDefault(require("../utils/bind"));
+if ('IntersectionObserver' in window) {
+  var observer = new IntersectionObserver(function (entries) {
+    entries.filter(function (item) {
+      return item.isIntersecting;
+    }).forEach(function (item) {
+      cover(item.target);
+      observer.unobserve(item.target);
+    });
+  });
+  (0, _find.find)('[data-cover]').forEach(function (el) {
+    observer.observe(el);
+  });
+} else {
+  (0, _find.find)('[data-cover]').forEach(cover);
+}
+
+},{"../utils/find":8}],3:[function(require,module,exports){
+"use strict";
+
+var _debounce = require("../utils/debounce");
+
+var _bind = require("../utils/bind");
 
 var regexp = new RegExp(/^#[^ ]+$/);
 
@@ -80,8 +104,8 @@ var match = function match() {
   });
 };
 
-var callback = (0, _debounce["default"])(scroll);
-(0, _bind["default"])(document, 'click', 'a', click);
+var callback = (0, _debounce.debounce)(scroll);
+(0, _bind.bind)(document, 'click', 'a', click);
 window.addEventListener('hashchange', match, {
   passive: true
 });
@@ -93,12 +117,10 @@ window.addEventListener('load', callback, {
 });
 match();
 
-},{"../utils/bind":5,"../utils/debounce":6,"@babel/runtime/helpers/interopRequireDefault":7}],3:[function(require,module,exports){
+},{"../utils/bind":6,"../utils/debounce":7}],4:[function(require,module,exports){
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
-var _debounce = _interopRequireDefault(require("../utils/debounce"));
+var _debounce = require("../utils/debounce");
 
 var html = document.documentElement;
 var container = document.scrollingElement;
@@ -113,7 +135,7 @@ var scroller = function scroller() {
   html.classList.toggle('scroll-top', scrollTop > 0 && scroll > scrollTop);
 };
 
-var callback = (0, _debounce["default"])(scroller);
+var callback = (0, _debounce.debounce)(scroller);
 window.addEventListener('orientationchange', callback, {
   passive: true
 });
@@ -125,7 +147,7 @@ window.addEventListener('scroll', callback, {
 });
 scroller();
 
-},{"../utils/debounce":6,"@babel/runtime/helpers/interopRequireDefault":7}],4:[function(require,module,exports){
+},{"../utils/debounce":7}],5:[function(require,module,exports){
 "use strict";
 
 require("./component/hashchange");
@@ -134,8 +156,15 @@ require("./component/scroll");
 
 require("./component/card");
 
-},{"./component/card":1,"./component/hashchange":2,"./component/scroll":3}],5:[function(require,module,exports){
+require("./component/cover");
+
+},{"./component/card":1,"./component/cover":2,"./component/hashchange":3,"./component/scroll":4}],6:[function(require,module,exports){
 "use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.bind = bind;
 
 function bind(parent, event, selector, callback) {
   return parent.addEventListener(event, function (ev) {
@@ -146,15 +175,17 @@ function bind(parent, event, selector, callback) {
   }, true);
 }
 
-module.exports = bind;
-
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.debounce = debounce;
 var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 var cancelAnimationFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame;
 
-module.exports = function debounce(fn) {
+function debounce(fn) {
   var frame, params;
   return function () {
     params = arguments;
@@ -167,16 +198,25 @@ module.exports = function debounce(fn) {
       fn.apply(null, params);
     });
   };
-};
-
-},{}],7:[function(require,module,exports){
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
 }
 
-module.exports = _interopRequireDefault;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}]},{},[4])
+},{}],8:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.find = find;
+
+/**
+ *
+ * @param selector
+ * @param parent
+ * @return {Element[]}
+ */
+function find(selector, parent) {
+  return Array.from((parent || document).querySelectorAll(selector));
+}
+
+},{}]},{},[5])
 

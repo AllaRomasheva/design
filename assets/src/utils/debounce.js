@@ -1,8 +1,8 @@
-var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-var cancelAnimationFrame  = window.cancelAnimationFrame || window.mozCancelAnimationFrame;
+const requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+const cancelAnimationFrame  = window.cancelAnimationFrame || window.mozCancelAnimationFrame;
 
-module.exports = function debounce(fn) {
-    var frame, params;
+export function debounce(fn) {
+    let frame, params;
     return function () {
         params = arguments;
         if (frame) {

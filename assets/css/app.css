@@ -506,10 +506,20 @@ body {
 }
 :root {
   --header-background: transparent;
+  --header-title-visibility: block;
   --header-shadow: none;
   --header-height: 5rem;
+  --header-logo: 1.5rem;
+  --header-icon: 2rem;
 }
 
+@media screen and (max-width: 48rem) {
+  :root {
+    --header-icon: 1.75rem;
+    --header-height: 4rem;
+    --header-title-visibility: none;
+  }
+}
 .scroll {
   --header-background: #ffffff;
   --header-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -550,11 +560,7 @@ body {
 }
 .app-header-title {
   margin-left: 0.5rem;
-}
-@media screen and (max-width: 48rem) {
-  .app-header-title {
-    display: none;
-  }
+  display: var(--header-title-visibility);
 }
 .app-header-nav {
   display: flex;
@@ -563,11 +569,11 @@ body {
 }
 .app-header-logo {
   margin: 0 auto 0 0;
-  font-size: 1.5rem;
+  font-size: var(--header-logo);
 }
 .app-header-logo svg {
-  height: 1.5em;
-  width: 1.5em;
+  height: var(--header-icon);
+  width: var(--header-icon);
 }
 .app-header-logo a {
   display: flex;
@@ -577,6 +583,11 @@ body {
 .app-header-link {
   font-size: 1.125rem;
   margin: 0;
+}
+@media screen and (max-width: 48rem) {
+  .app-header-link {
+    font-size: 1rem;
+  }
 }
 .app-header-link + .app-header-link {
   margin-left: var(--gap);
@@ -733,6 +744,11 @@ body {
   padding-top: calc(3 / 4 * 100%);
   display: block;
 }
+@media screen and (max-width: 48rem) {
+  .app-card-front:before, .app-card-back:before {
+    padding-top: calc(4 / 3 * 100%);
+  }
+}
 .app-card-back, .app-card-image, .app-card-inner, .app-card-front:after {
   border-radius: 0.5rem;
   -webkit-backface-visibility: hidden;
@@ -741,6 +757,7 @@ body {
 .app-card-image {
   z-index: 1;
   background-color: #fff;
+  overflow: hidden;
 }
 .app-card-back {
   background-color: #fff;

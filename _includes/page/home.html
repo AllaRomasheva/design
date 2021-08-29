@@ -53,7 +53,7 @@
                 <h2 class="fs-2">{% include i18n id="Contact me" %}</h2>
                 <p>{% include i18n id="If you have an open project or just need a consultation, you can contact me via" %}:</p>
                 <div class="app-inline">
-                    {% for item in site.social.contacts %}
+                    {% for item in site.contacts %}
                     {% capture name %}{{item[0]}}{% endcapture %}
                     <a href="{{ item[1] }}" class="fx-inline fx-ai-center mr-4" rel="author">
                         <div class="icon large c-{{item[0]}}">{% include icon name=name %}</div>
