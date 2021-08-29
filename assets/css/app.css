@@ -736,7 +736,7 @@ body {
 }
 .app-card-front, .app-card-back {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transform-style: preserve-3d;
 }
 .app-card-front:before, .app-card-back:before {
@@ -752,7 +752,7 @@ body {
 .app-card-back, .app-card-image, .app-card-inner, .app-card-front:after {
   border-radius: 0.5rem;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .app-card-image {
   z-index: 1;

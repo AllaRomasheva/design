@@ -302,6 +302,7 @@
   }
 
   &-front, &-back {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform-style: preserve-3d;
 
@@ -319,6 +320,7 @@
   &-back, &-image, &-inner, &-front:after {
     @extend .cover;
     border-radius: .5rem;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 
