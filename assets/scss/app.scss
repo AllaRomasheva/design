@@ -388,9 +388,6 @@
       text-shadow: none;
       color: var(--color-link-active);
     }
-    @include tablet {
-      padding: 0.25rem 1rem;
-    }
   }
 
   &.active &-content {
@@ -398,6 +395,9 @@
   }
 
   @include tablet {
+    &-button{
+      padding: 0.25rem 1rem;
+    }
     &-front{
       p{
         font-size:0.875rem;
@@ -406,6 +406,9 @@
   }
 
   @include phone {
+    &.active &-content {
+      transform:none;
+    }
     &-content {
       transform-style: inherit;
       transition: none;

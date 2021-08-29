@@ -811,20 +811,21 @@ body {
   text-shadow: none;
   color: var(--color-link-active);
 }
-@media screen and (max-width: 64rem) {
-  .app-card-button {
-    padding: 0.25rem 1rem;
-  }
-}
 .app-card.active .app-card-content {
   transform: rotateY(180deg);
 }
 @media screen and (max-width: 64rem) {
+  .app-card-button {
+    padding: 0.25rem 1rem;
+  }
   .app-card-front p {
     font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 48rem) {
+  .app-card.active .app-card-content {
+    transform: none;
+  }
   .app-card-content {
     transform-style: inherit;
     transition: none;
