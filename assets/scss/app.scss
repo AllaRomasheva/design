@@ -207,14 +207,13 @@
 
 @include phone {
   .app {
-    padding-bottom: var(--header-nav);
+    padding-bottom: calc( var(--header-nav) + env(safe-area-inset-bottom));
   }
   .app-header{
     &-nav{
       display:flex;
       flex-direction: row;
       box-shadow: var(--header-shadow);
-      height:var(--header-nav);
       position: fixed;
       bottom: 0;
       left: 0;
@@ -225,6 +224,7 @@
       padding-bottom:env(safe-area-inset-bottom);
     }
     &-link{
+      height:var(--header-nav);
       display:flex;
       flex:1;
       align-items: stretch;
