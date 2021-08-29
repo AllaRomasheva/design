@@ -53,7 +53,23 @@ section :last-child {
 }
 
 ul {
+  padding-left: 0;
+}
+ul li {
   padding-left: 1em;
+  position: relative;
+  list-style: none;
+}
+ul li:before {
+  content: "";
+  border-radius: 100%;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0.5em 0;
+  background: var(--color-pink);
+  position: absolute;
+  line-height: inherit;
+  left: 0;
 }
 ul li + li {
   margin-top: 0.5em;

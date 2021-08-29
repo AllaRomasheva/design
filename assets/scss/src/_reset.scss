@@ -37,7 +37,23 @@ section{
 }
 
 ul{
-  padding-left:1em;
+  padding-left:0;
+  li{
+    padding-left:1em;
+    position:relative;
+    list-style:none;
+    &:before{
+      content:'';
+      border-radius:100%;
+      width:.5em;
+      height:.5em;
+      margin:.5em 0;
+      background: var(--color-pink);
+      position:absolute;
+      line-height:inherit;
+      left:0;
+    }
+  }
   li + li {
     margin-top:.5em;
   }

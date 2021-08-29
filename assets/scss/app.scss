@@ -353,7 +353,6 @@
     overflow-y: hidden;
     margin-right: calc(var(--gap) / -1);
     padding-right: var(--gap);
-
     .active & {
       overflow-y: auto;
     }
