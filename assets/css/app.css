@@ -52,6 +52,13 @@ section :last-child {
   margin-bottom: 0;
 }
 
+ul {
+  padding-left: 1em;
+}
+ul li + li {
+  margin-top: 0.5em;
+}
+
 article :last-child {
   margin-bottom: 0;
 }

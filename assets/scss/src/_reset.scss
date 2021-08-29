@@ -36,6 +36,13 @@ section{
   }
 }
 
+ul{
+  padding-left:1em;
+  li + li {
+    margin-top:.5em;
+  }
+}
+
 article{
   :last-child{
     margin-bottom:0;
