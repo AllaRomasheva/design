@@ -83,7 +83,7 @@ var scroll = function scroll() {
 };
 
 var click = function click(ev) {
-  if (ev.target.hash === location.hash) {
+  if (ev.target.hash && ev.target.hash === location.hash) {
     ev.preventDefault();
   }
 };

@@ -33,7 +33,7 @@ const scroll = () => {
 }
 
 const click = (ev) => {
-    if(ev.target.hash === location.hash){
+    if(ev.target.hash && ev.target.hash === location.hash){
         ev.preventDefault();
     }
 }
