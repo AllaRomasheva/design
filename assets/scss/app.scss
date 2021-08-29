@@ -92,7 +92,7 @@
     &-nav {
       @include phone {
         --gap: 1rem;
-        padding-top: calc(var(--gap) / 4);
+        padding-top: calc(var(--gap) / 2);
       }
       display: flex;
       flex-direction: row;
@@ -104,6 +104,16 @@
       font-size: 1.5rem;
       @include phone {
         margin: 0;
+      }
+      svg{
+        height:1em;
+        width:1em;
+        margin-right:.5rem;
+      }
+      a{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
       }
     }
 
