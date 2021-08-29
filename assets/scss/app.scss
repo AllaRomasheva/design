@@ -310,17 +310,12 @@
       content: '';
       padding-top: calc(3 / 4 * 100%);
       display: block;
-      @include phone {
-        padding-top: calc(4 / 3 * 100%);
-      }
     }
-
   }
 
   &-back, &-image, &-inner, &-front:after {
     @extend .cover;
     border-radius: .5rem;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 
@@ -355,10 +350,11 @@
   }
 
   &-wrapper {
-    overflow-y:hidden;
+    overflow-y: hidden;
     margin-right: calc(var(--gap) / -1);
     padding-right: var(--gap);
-    .active &{
+
+    .active & {
       overflow-y: auto;
     }
   }
@@ -392,11 +388,57 @@
       text-shadow: none;
       color: var(--color-link-active);
     }
+    @include tablet {
+      padding: 0.25rem 1rem;
+    }
   }
 
   &.active &-content {
     transform: rotateY(180deg);
   }
+
+  @include tablet {
+    &-front{
+      p{
+        font-size:0.875rem;
+      }
+    }
+  }
+
+  @include phone {
+    &-content {
+      transform-style: inherit;
+      transition: none;
+    }
+    &-back, &-front, &-inner {
+      position: relative;
+    }
+    &-button{
+      display:none;
+    }
+    &-back, &-front,&-inner {
+      transform: none;
+      &:before {
+        display: none;
+      }
+    }
+    &-front,&-front:after,&-image{
+      border-bottom-left-radius:0;
+      border-bottom-right-radius:0;
+    }
+    &-front{
+      p{
+        margin:0;
+        font-size:0.875rem;
+      }
+    }
+    &-back{
+      transform:none;
+      border-top-left-radius:0;
+      border-top-right-radius:0;
+    }
+  }
+
 }
 
 .app-rounded {
