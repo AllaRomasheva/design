@@ -406,6 +406,7 @@
   }
 
   @include phone {
+
     &.active &-content {
       transform:none;
     }
