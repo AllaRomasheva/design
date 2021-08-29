@@ -99,6 +99,9 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      @include phone {
+        display: none;
+      }
     }
 
     &-logo {
@@ -120,9 +123,6 @@
     &-link {
       font-size: 1.125rem;
       font-weight: var(--font-weight-bold);
-      @include phone {
-        font-size: 1rem;
-      }
       margin: 0;
     }
 
@@ -206,54 +206,45 @@
 
 
 @include phone {
-  html{
-    -webkit-backface-visibility: hidden;
-    -webkit-overflow-scrolling: touch;
-    backface-visibility: hidden;
-  }
-  .app {
-    padding-bottom: calc( var(--header-nav) + env(safe-area-inset-bottom));
-  }
-  .app-header{
-    &-nav{
+  .app-nav {
+    --link-color: var(--color-primary);
+    --link-color-hover: var(--color-link);
+    --link-decoration: none;
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--header-shadow);
+    position: sticky;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 200;
+    padding-bottom: env(safe-area-inset-bottom);
 
-      display:flex;
-      flex-direction: row;
-      box-shadow: var(--header-shadow);
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: #fff;
-      justify-content: flex-start;
+    &-item {
+      height: var(--header-nav);
+      display: flex;
+      flex: 1;
       align-items: stretch;
-      padding-bottom:env(safe-area-inset-bottom);
     }
-    &-link{
-      height:var(--header-nav);
-      display:flex;
-      flex:1;
-      align-items: stretch;
-      a{
-        align-items: center;
-        justify-content: center;
-        display:flex;
-        flex:1;
-        position:relative;
-        &.active{
-          &:before{
-            content:'';
-            height:.125rem;
-            position: absolute;
-            top:-.125rem;left:0;right:0;
-            border-radius:.125rem .125rem 0 0;
-            background-color:var(--color-link);
-          }
-        }
+
+    &-link {
+      flex: 1;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-size: 1rem;
+      font-weight: var(--font-weight-bold);
+
+      &.active:before {
+        content: '';
+        position: absolute;
+        height: .125rem;
+        border-radius: .125rem .125rem 0 0;
+        background-color: var(--color-link);
+        top: -.125rem;
+        left: 0;
+        right: 0;
       }
-    }
-    &-link + &-link{
-      margin-left:0;
     }
   }
 }

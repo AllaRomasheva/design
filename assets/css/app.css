@@ -590,6 +590,11 @@ body {
   flex-direction: row;
   align-items: center;
 }
+@media screen and (max-width: 48rem) {
+  .app-header-nav {
+    display: none;
+  }
+}
 .app-header-logo {
   margin: 0 auto 0 0;
   font-size: var(--header-logo);
@@ -607,11 +612,6 @@ body {
   font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
   margin: 0;
-}
-@media screen and (max-width: 48rem) {
-  .app-header-link {
-    font-size: 1rem;
-  }
 }
 .app-header-link + .app-header-link {
   margin-left: var(--gap);
@@ -678,54 +678,43 @@ body {
 }
 
 @media screen and (max-width: 48rem) {
-  html {
-    -webkit-backface-visibility: hidden;
-    -webkit-overflow-scrolling: touch;
-    backface-visibility: hidden;
-  }
-
-  .app {
-    padding-bottom: calc( var(--header-nav) + env(safe-area-inset-bottom));
-  }
-
-  .app-header-nav {
+  .app-nav {
+    --link-color: var(--color-primary);
+    --link-color-hover: var(--color-link);
+    --link-decoration: none;
     display: flex;
     flex-direction: row;
     box-shadow: var(--header-shadow);
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    justify-content: flex-start;
-    align-items: stretch;
+    background-color: #ffffff;
+    z-index: 200;
     padding-bottom: env(safe-area-inset-bottom);
   }
-  .app-header-link {
+  .app-nav-item {
     height: var(--header-nav);
     display: flex;
     flex: 1;
     align-items: stretch;
   }
-  .app-header-link a {
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  .app-nav-link {
     flex: 1;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
   }
-  .app-header-link a.active:before {
+  .app-nav-link.active:before {
     content: "";
-    height: 0.125rem;
     position: absolute;
+    height: 0.125rem;
+    border-radius: 0.125rem 0.125rem 0 0;
+    background-color: var(--color-link);
     top: -0.125rem;
     left: 0;
     right: 0;
-    border-radius: 0.125rem 0.125rem 0 0;
-    background-color: var(--color-link);
-  }
-  .app-header-link + .app-header-link {
-    margin-left: 0;
   }
 }
 .app-blog {
