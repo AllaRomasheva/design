@@ -22,6 +22,8 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 
 var _debounce = _interopRequireDefault(require("../utils/debounce"));
 
+var _bind = _interopRequireDefault(require("../utils/bind"));
+
 var regexp = new RegExp(/^#[^ ]+$/);
 
 var getCssNumber = function getCssNumber(element, prop) {
@@ -32,6 +34,10 @@ var getCssNumber = function getCssNumber(element, prop) {
   }
 
   return parseInt(value) || 0;
+};
+
+var position = function position(elem) {
+  return elem.getBoundingClientRect();
 };
 
 var getOffset = function getOffset(elem) {
@@ -46,9 +52,15 @@ var scroll = function scroll() {
   elem = hash ? document.querySelector(hash) : null;
 
   if (elem) {
-    rect = elem.getBoundingClientRect();
+    rect = position(elem);
     offset = window.pageYOffset + Math.round(rect.top) - getOffset(elem);
-    window.scrollTo(window.pageXOffset, offset);
+    window.scrollTo(window.scrollX, offset);
+  }
+};
+
+var click = function click(ev) {
+  if (ev.target.hash === location.hash) {
+    ev.preventDefault();
   }
 };
 
@@ -69,6 +81,7 @@ var match = function match() {
 };
 
 var callback = (0, _debounce["default"])(scroll);
+(0, _bind["default"])(document, 'click', 'a', click);
 window.addEventListener('hashchange', match, {
   passive: true
 });
@@ -80,7 +93,7 @@ window.addEventListener('load', callback, {
 });
 match();
 
-},{"../utils/debounce":6,"@babel/runtime/helpers/interopRequireDefault":7}],3:[function(require,module,exports){
+},{"../utils/bind":5,"../utils/debounce":6,"@babel/runtime/helpers/interopRequireDefault":7}],3:[function(require,module,exports){
 "use strict";
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");

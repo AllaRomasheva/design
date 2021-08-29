@@ -1,32 +1,45 @@
 import debounce from '../utils/debounce';
 
+import bind from '../utils/bind';
+
 const regexp       = new RegExp(/^#[^ ]+$/);
 
-const getCssNumber = function(element,prop){
+const getCssNumber = (element,prop) => {
     let value = null;
     if( element ) {
         value = getComputedStyle(element)[prop];
     }
     return parseInt(value) || 0;
 }
-const getOffset = function (elem) {
+
+const position = (elem) => {
+    return elem.getBoundingClientRect();
+}
+
+const getOffset = (elem) => {
     let header   = document.querySelector('.app-header');
     let previous = elem.previousElementSibling;
     return Math.round(header.offsetHeight) + (getCssNumber(previous,'marginBottom') || 0 );
 }
 
-const scroll = function(){
+const scroll = () => {
     let offset,rect,elem,hash;
     hash = location.hash;
     elem = hash ? document.querySelector(hash) : null;
     if( elem ) {
-        rect = elem.getBoundingClientRect();
+        rect = position(elem);
         offset = window.pageYOffset + Math.round(rect.top) - getOffset(elem);
-        window.scrollTo(window.pageXOffset,offset);
+        window.scrollTo(window.scrollX,offset);
     }
 }
 
-const match = function () {
+const click = (ev) => {
+    if(ev.target.hash === location.hash){
+        ev.preventDefault();
+    }
+}
+
+const match = () => {
     let href = location.href, expr , attr;
     let list = document.querySelectorAll('a[href],[data-rel]');
     [].slice.call(list).filter(function (el) {
@@ -41,6 +54,8 @@ const match = function () {
 }
 
 const callback = debounce(scroll);
+
+bind(document,'click','a',click);
 
 window.addEventListener('hashchange', match , {passive: true});
 window.addEventListener('hashchange', callback, {passive: true});
