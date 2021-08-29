@@ -77,23 +77,16 @@
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
-      @include phone-xs {
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    }
+
+    &-title{
+      margin-left:.5rem;
       @include phone {
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+          display:none;
       }
     }
 
     &-nav {
-      @include phone {
-        --gap: 1rem;
-        padding-top: calc(var(--gap) / 2);
-      }
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -102,13 +95,9 @@
     &-logo {
       margin: 0 auto 0 0;
       font-size: 1.5rem;
-      @include phone {
-        margin: 0;
-      }
       svg{
-        height:1em;
-        width:1em;
-        margin-right:.5rem;
+        height:1.5em;
+        width:1.5em;
       }
       a{
         display:flex;
