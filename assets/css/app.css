@@ -534,6 +534,7 @@ body {
   --header-height: 5rem;
   --header-logo: 1.5rem;
   --header-icon: 2rem;
+  --header-nav: 3rem;
 }
 
 @media screen and (max-width: 48rem) {
@@ -583,7 +584,6 @@ body {
 }
 .app-header-title {
   margin-left: 0.5rem;
-  display: var(--header-title-visibility);
 }
 .app-header-nav {
   display: flex;
@@ -605,6 +605,7 @@ body {
 }
 .app-header-link {
   font-size: 1.125rem;
+  font-weight: var(--font-weight-bold);
   margin: 0;
 }
 @media screen and (max-width: 48rem) {
@@ -676,6 +677,50 @@ body {
   margin: 0.5rem;
 }
 
+@media screen and (max-width: 48rem) {
+  .app {
+    padding-bottom: var(--header-nav);
+  }
+
+  .app-header-nav {
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--header-shadow);
+    height: var(--header-nav);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .app-header-link {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+  }
+  .app-header-link a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    position: relative;
+  }
+  .app-header-link a.active:before {
+    content: "";
+    height: 0.125rem;
+    position: absolute;
+    top: -0.125rem;
+    left: 0;
+    right: 0;
+    border-radius: 0.125rem 0.125rem 0 0;
+    background-color: var(--color-link);
+  }
+  .app-header-link + .app-header-link {
+    margin-left: 0;
+  }
+}
 .app-blog {
   display: grid;
   grid-auto-columns: auto;

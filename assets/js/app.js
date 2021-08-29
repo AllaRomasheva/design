@@ -133,6 +133,7 @@ var scroller = function scroller() {
   html.classList.toggle('scroll', scrollTop > 0);
   html.classList.toggle('scroll-bottom', scrollTop > 0 && scroll < scrollTop);
   html.classList.toggle('scroll-top', scrollTop > 0 && scroll > scrollTop);
+  scroll = scrollTop;
 };
 
 var callback = (0, _debounce.debounce)(scroller);

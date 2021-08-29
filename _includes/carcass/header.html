@@ -8,10 +8,10 @@
                 <span class="app-header-title">{% include i18n id="Romasheva Design" %}</span>
             </a>
         </h1>
-        <div class="app-header-nav">
-            <h3 class="app-header-link"><a href="{{ '#services' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Services" %}</a></h3>
-            <h3 class="app-header-link"><a href="{{ '#portfolio' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Portfolio" %}</a></h3>
-            <h3 class="app-header-link"><a href="{{ '#contacts' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Contacts" %}</a></h3>
-        </div>
+        <nav class="app-header-nav">
+            <div class="app-header-link"><a href="{{ '#services' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Services" %}</a></div>
+            <div class="app-header-link"><a href="{{ '#portfolio' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Portfolio" %}</a></div>
+            <div class="app-header-link"><a href="{{ '#contacts' | prepend: '/' | prepend: page.lang | prepend: '/' | absolute_url }}">{% include i18n id="Contacts" %}</a></div>
+        </nav>
     </div>
 </div>

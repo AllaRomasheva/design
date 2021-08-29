@@ -42,6 +42,7 @@
   --header-height: 5rem;
   --header-logo: 1.5rem;
   --header-icon: 2rem;
+  --header-nav: 3rem;
 }
 
 @include phone {
@@ -92,7 +93,6 @@
 
     &-title {
       margin-left: .5rem;
-      display: var(--header-title-visibility);
     }
 
     &-nav {
@@ -119,6 +119,7 @@
 
     &-link {
       font-size: 1.125rem;
+      font-weight: var(--font-weight-bold);
       @include phone {
         font-size: 1rem;
       }
@@ -199,6 +200,53 @@
 
     > * {
       margin: 0.5rem;
+    }
+  }
+}
+
+
+@include phone {
+  .app {
+    padding-bottom: var(--header-nav);
+  }
+  .app-header{
+    &-nav{
+      display:flex;
+      flex-direction: row;
+      box-shadow: var(--header-shadow);
+      height:var(--header-nav);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+    &-link{
+      display:flex;
+      flex:1;
+      align-items: stretch;
+      a{
+        align-items: center;
+        justify-content: center;
+        display:flex;
+        flex:1;
+        position:relative;
+        &.active{
+          &:before{
+            content:'';
+            height:.125rem;
+            position: absolute;
+            top:-.125rem;left:0;right:0;
+            border-radius:.125rem .125rem 0 0;
+            background-color:var(--color-link);
+          }
+        }
+      }
+    }
+    &-link + &-link{
+      margin-left:0;
     }
   }
 }
@@ -353,6 +401,7 @@
     overflow-y: hidden;
     margin-right: calc(var(--gap) / -1);
     padding-right: var(--gap);
+
     .active & {
       overflow-y: auto;
     }
@@ -394,12 +443,12 @@
   }
 
   @include tablet {
-    &-button{
+    &-button {
       padding: 0.25rem 1rem;
     }
-    &-front{
-      p{
-        font-size:0.875rem;
+    &-front {
+      p {
+        font-size: 0.875rem;
       }
     }
   }
@@ -407,7 +456,7 @@
   @include phone {
 
     &.active &-content {
-      transform:none;
+      transform: none;
     }
     &-content {
       transform-style: inherit;
@@ -416,29 +465,30 @@
     &-back, &-front, &-inner {
       position: relative;
     }
-    &-button{
-      display:none;
+    &-button {
+      display: none;
     }
-    &-back, &-front,&-inner {
+    &-back, &-front, &-inner {
       transform: none;
+
       &:before {
         display: none;
       }
     }
-    &-front,&-front:after,&-image{
-      border-bottom-left-radius:0;
-      border-bottom-right-radius:0;
+    &-front, &-front:after, &-image {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
-    &-front{
-      p{
-        margin:0;
-        font-size:0.875rem;
+    &-front {
+      p {
+        margin: 0;
+        font-size: 0.875rem;
       }
     }
-    &-back{
-      transform:none;
-      border-top-left-radius:0;
-      border-top-right-radius:0;
+    &-back {
+      transform: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
   }
 
