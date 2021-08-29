@@ -680,6 +680,9 @@ body {
 @media screen and (max-width: 48rem) {
   .app {
     padding-bottom: calc( var(--header-nav) + env(safe-area-inset-bottom));
+    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    backface-visibility: hidden;
   }
 
   .app-header-nav {

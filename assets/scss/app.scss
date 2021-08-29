@@ -208,9 +208,13 @@
 @include phone {
   .app {
     padding-bottom: calc( var(--header-nav) + env(safe-area-inset-bottom));
+    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    backface-visibility: hidden;
   }
   .app-header{
     &-nav{
+
       display:flex;
       flex-direction: row;
       box-shadow: var(--header-shadow);
