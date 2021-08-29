@@ -727,6 +727,26 @@ h1, .fs-1 {
   }
 }
 
+@media screen and (max-width: 64rem) {
+  .fs-md-1 {
+    font-size: calc(1.3125rem + 0.75vw);
+  }
+}
+@media screen and (max-width: 64rem) and (min-width: 1200px) {
+  .fs-md-1 {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .fs-sm-1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+}
+@media screen and (max-width: 48rem) and (min-width: 1200px) {
+  .fs-sm-1 {
+    font-size: 2.5rem;
+  }
+}
 h2, .fs-2 {
   font-size: calc(1.325rem + 0.9vw);
 }
@@ -736,6 +756,26 @@ h2, .fs-2 {
   }
 }
 
+@media screen and (max-width: 64rem) {
+  .fs-md-2 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+@media screen and (max-width: 64rem) and (min-width: 1200px) {
+  .fs-md-2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .fs-sm-2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+}
+@media screen and (max-width: 48rem) and (min-width: 1200px) {
+  .fs-sm-2 {
+    font-size: 2rem;
+  }
+}
 h3, .fs-3 {
   font-size: calc(1.3rem + 0.6vw);
 }
@@ -745,6 +785,26 @@ h3, .fs-3 {
   }
 }
 
+@media screen and (max-width: 64rem) {
+  .fs-md-3 {
+    font-size: calc(1.25625rem + 0.075vw);
+  }
+}
+@media screen and (max-width: 64rem) and (min-width: 1200px) {
+  .fs-md-3 {
+    font-size: 1.3125rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .fs-sm-3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+}
+@media screen and (max-width: 48rem) and (min-width: 1200px) {
+  .fs-sm-3 {
+    font-size: 1.75rem;
+  }
+}
 h4, .fs-4 {
   font-size: calc(1.275rem + 0.3vw);
 }
@@ -754,14 +814,49 @@ h4, .fs-4 {
   }
 }
 
+@media screen and (max-width: 64rem) {
+  .fs-md-4 {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .fs-sm-4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+@media screen and (max-width: 48rem) and (min-width: 1200px) {
+  .fs-sm-4 {
+    font-size: 1.5rem;
+  }
+}
 h5, .fs-5 {
   font-size: 1.25rem;
 }
 
+@media screen and (max-width: 64rem) {
+  .fs-md-5 {
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .fs-sm-5 {
+    font-size: 1.25rem;
+  }
+}
 h6, .fs-6 {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 64rem) {
+  .fs-md-6 {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .fs-sm-6 {
+    font-size: 1rem;
+  }
+}
 .small {
   font-size: var(--font-size-small);
 }

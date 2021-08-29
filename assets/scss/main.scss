@@ -12,7 +12,19 @@
   h#{$i},.fs-#{$i}{
     @include font-size($value);
   }
+  @include tablet{
+    .fs-md-#{$i}{
+      @include font-size($value * .75);
+    }
+  }
+  @include phone{
+    .fs-sm-#{$i}{
+      @include font-size($value  * 1);
+    }
+  }
 }
+
+
 
 .small{
   font-size:var(--font-size-small);
