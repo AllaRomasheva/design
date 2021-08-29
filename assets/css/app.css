@@ -780,9 +780,12 @@ body {
   padding: var(--gap);
 }
 .app-card-wrapper {
-  overflow-y: auto;
+  overflow-y: hidden;
   margin-right: calc(var(--gap) / -1);
   padding-right: var(--gap);
+}
+.active .app-card-wrapper {
+  overflow-y: auto;
 }
 .app-card-close {
   z-index: 9;
