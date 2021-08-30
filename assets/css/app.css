@@ -551,6 +551,8 @@ body {
 
 .fb_dialog_content iframe {
   bottom: calc(var(--header-nav) + 1rem) !important;
+  -webkit-animation: none !important;
+          animation: none !important;
 }
 
 .app {
