@@ -1,7 +1,5 @@
 import smoothScroll from 'smoothscroll-polyfill';
 
-window.__forceSmoothScrollPolyfill__ = true;
-
 smoothScroll.polyfill();
 
 import './component/hashchange';

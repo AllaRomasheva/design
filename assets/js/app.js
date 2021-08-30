@@ -167,8 +167,6 @@ require("./component/card");
 
 require("./component/cover");
 
-window.__forceSmoothScrollPolyfill__ = true;
-
 _smoothscrollPolyfill["default"].polyfill();
 
 },{"./component/card":1,"./component/cover":2,"./component/hashchange":3,"./component/scroll":4,"@babel/runtime/helpers/interopRequireDefault":9,"smoothscroll-polyfill":10}],6:[function(require,module,exports){
