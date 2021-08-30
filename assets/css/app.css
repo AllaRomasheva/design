@@ -549,6 +549,10 @@ body {
   --header-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
+.fb_dialog_content iframe {
+  bottom: calc(var(--header-nav) + 1rem) !important;
+}
+
 .app {
   min-height: 100vh;
   display: flex;

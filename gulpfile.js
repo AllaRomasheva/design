@@ -3,11 +3,8 @@ const {gulp,jsBundler,scssBundler,svgBundler} = require('gulp2go');
 
 const replace = require('gulp-string-replace');
 const favicons = require("favicons");
-const stream  = favicons.stream;
-const config  = favicons.config;
 const through = require('through2');
 const fs = require('fs');
-
 
 gulp.task('favicon', function(){
     const color = '#4e4cbd';
