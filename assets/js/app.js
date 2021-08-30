@@ -50,6 +50,7 @@ var _debounce = require("../utils/debounce");
 
 var _bind = require("../utils/bind");
 
+window.__forceSmoothScrollPolyfill__ = true;
 var regexp = new RegExp(/^#[^ ]+$/);
 
 var getCssNumber = function getCssNumber(element, prop) {
