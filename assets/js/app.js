@@ -44,17 +44,9 @@ if ('IntersectionObserver' in window) {
 },{"../utils/find":8}],3:[function(require,module,exports){
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
-var _smoothscrollPolyfill = _interopRequireDefault(require("smoothscroll-polyfill"));
-
 var _debounce = require("../utils/debounce");
 
 var _bind = require("../utils/bind");
-
-window.__forceSmoothScrollPolyfill__ = true;
-
-_smoothscrollPolyfill["default"].polyfill();
 
 var regexp = new RegExp(/^#[^ ]+$/);
 
@@ -129,7 +121,7 @@ window.addEventListener('load', callback, {
 });
 match();
 
-},{"../utils/bind":6,"../utils/debounce":7,"@babel/runtime/helpers/interopRequireDefault":9,"smoothscroll-polyfill":10}],4:[function(require,module,exports){
+},{"../utils/bind":6,"../utils/debounce":7}],4:[function(require,module,exports){
 "use strict";
 
 var _debounce = require("../utils/debounce");
@@ -163,6 +155,10 @@ scroller();
 },{"../utils/debounce":7}],5:[function(require,module,exports){
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _smoothscrollPolyfill = _interopRequireDefault(require("smoothscroll-polyfill"));
+
 require("./component/hashchange");
 
 require("./component/scroll");
@@ -171,7 +167,11 @@ require("./component/card");
 
 require("./component/cover");
 
-},{"./component/card":1,"./component/cover":2,"./component/hashchange":3,"./component/scroll":4}],6:[function(require,module,exports){
+window.__forceSmoothScrollPolyfill__ = true;
+
+_smoothscrollPolyfill["default"].polyfill();
+
+},{"./component/card":1,"./component/cover":2,"./component/hashchange":3,"./component/scroll":4,"@babel/runtime/helpers/interopRequireDefault":9,"smoothscroll-polyfill":10}],6:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

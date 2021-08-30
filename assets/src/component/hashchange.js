@@ -1,11 +1,5 @@
-import smoothScroll from 'smoothscroll-polyfill';
 import {debounce} from '../utils/debounce';
 import {bind} from '../utils/bind';
-
-
-window.__forceSmoothScrollPolyfill__ = true;
-
-smoothScroll.polyfill();
 
 const regexp       = new RegExp(/^#[^ ]+$/);
 
