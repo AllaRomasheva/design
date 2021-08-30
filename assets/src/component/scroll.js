@@ -2,6 +2,7 @@ import {debounce} from '../utils/debounce';
 
 const html = document.documentElement;
 const container = document.scrollingElement;
+
 let scroll = 0;
 
 const scroller = () => {

@@ -1,3 +1,4 @@
+import 'smoothscroll-polyfill';
 import {debounce} from '../utils/debounce';
 import {bind} from '../utils/bind';
 
@@ -28,7 +29,7 @@ const scroll = () => {
     if( elem ) {
         rect = position(elem);
         offset = window.pageYOffset + Math.round(rect.top) - getOffset(elem);
-        window.scrollTo(window.scrollX,offset);
+        window.scrollTo({ top: offset, left: window.scrollX, behavior: 'smooth' });
     }
 }
 
