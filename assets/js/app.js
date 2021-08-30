@@ -44,13 +44,18 @@ if ('IntersectionObserver' in window) {
 },{"../utils/find":8}],3:[function(require,module,exports){
 "use strict";
 
-require("smoothscroll-polyfill");
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _smoothscrollPolyfill = _interopRequireDefault(require("smoothscroll-polyfill"));
 
 var _debounce = require("../utils/debounce");
 
 var _bind = require("../utils/bind");
 
 window.__forceSmoothScrollPolyfill__ = true;
+
+_smoothscrollPolyfill["default"].polyfill();
+
 var regexp = new RegExp(/^#[^ ]+$/);
 
 var getCssNumber = function getCssNumber(element, prop) {
@@ -124,7 +129,7 @@ window.addEventListener('load', callback, {
 });
 match();
 
-},{"../utils/bind":6,"../utils/debounce":7,"smoothscroll-polyfill":9}],4:[function(require,module,exports){
+},{"../utils/bind":6,"../utils/debounce":7,"@babel/runtime/helpers/interopRequireDefault":9,"smoothscroll-polyfill":10}],4:[function(require,module,exports){
 "use strict";
 
 var _debounce = require("../utils/debounce");
@@ -227,6 +232,15 @@ function find(selector, parent) {
 }
 
 },{}],9:[function(require,module,exports){
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+},{}],10:[function(require,module,exports){
 /* smoothscroll v0.4.4 - 2019 - Dustan Kasten, Jeremias Menichelli - MIT License */
 (function () {
   'use strict';
