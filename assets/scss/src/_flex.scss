@@ -1,6 +1,6 @@
-.fx{
-  --display:flex;
-  display:var(--display);
+.fx {
+  --display: flex;
+  display: var(--display);
 }
 
 .fx-truncate {
@@ -8,43 +8,55 @@
   white-space: nowrap;
   overflow: hidden;
 }
-.fx-1{
-  flex:1;
+
+.fx-1 {
+  flex: 1;
 }
-.fx-min-0{
-  min-width:0;
+
+.fx-min-0 {
+  min-width: 0;
 }
-.fx-row{
+
+.fx-row {
   @extend .fx;
   flex-direction: row;
 }
-.fx-column{
+
+.fx-column {
   @extend .fx;
   flex-direction: column;
 }
-.fx-inline{
+
+.fx-inline {
   @extend .fx;
-  --display:inline-flex;
+  --display: inline-flex;
 }
-.fx-wrap{
-  flex-wrap:wrap;
+
+.fx-wrap {
+  flex-wrap: wrap;
 }
-.fx-nowrap{
-  flex-wrap:nowrap;
+
+.fx-nowrap {
+  flex-wrap: nowrap;
 }
-.fx-ai-center{
+
+.fx-ai-center {
   align-items: center;
 }
-.fx-jc-center{
+
+.fx-jc-center {
   justify-content: center;
 }
-.fx-jc-end{
+
+.fx-jc-end {
   justify-content: flex-end;
 }
-.fx-jc-start{
+
+.fx-jc-start {
   justify-content: flex-start;
-  &-phone{
-    @include phone{
+
+  &-phone {
+    @include phone {
       justify-content: flex-start;
     }
   }

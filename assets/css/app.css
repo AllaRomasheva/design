@@ -363,7 +363,7 @@ body {
 }
 
 .fx, .fx-inline, .fx-column, .fx-row, .app-inline-items {
-  --display:flex;
+  --display: flex;
   display: var(--display);
 }
 
@@ -390,7 +390,7 @@ body {
 }
 
 .fx-inline {
-  --display:inline-flex;
+  --display: inline-flex;
 }
 
 .fx-wrap, .app-inline-items {
@@ -677,44 +677,53 @@ body {
   margin: 0.5rem;
 }
 
+.app-nav {
+  --link-color: var(--color-primary);
+  --link-color-hover: var(--color-link);
+  --link-decoration: none;
+  display: none;
+  flex-direction: row;
+  box-shadow: var(--header-shadow);
+  position: sticky;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 200;
+  padding-bottom: env(safe-area-inset-bottom);
+}
 @media screen and (max-width: 48rem) {
   .app-nav {
-    --link-color: var(--color-primary);
-    --link-color-hover: var(--color-link);
-    --link-decoration: none;
     display: flex;
-    flex-direction: row;
-    box-shadow: var(--header-shadow);
-    position: sticky;
-    bottom: 0;
-    background-color: #ffffff;
-    z-index: 200;
-    padding-bottom: env(safe-area-inset-bottom);
   }
-  .app-nav-item {
-    height: var(--header-nav);
+}
+.app-nav-item {
+  height: var(--header-nav);
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+}
+.app-nav-link {
+  flex: 1;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+}
+.app-nav-link.active:before {
+  content: "";
+  position: absolute;
+  height: 0.125rem;
+  border-radius: 0.125rem 0.125rem 0 0;
+  background-color: var(--color-link);
+  top: -0.125rem;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 48rem) {
+  .app-nav {
     display: flex;
-    flex: 1;
-    align-items: stretch;
-  }
-  .app-nav-link {
-    flex: 1;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 1rem;
-    font-weight: var(--font-weight-bold);
-  }
-  .app-nav-link.active:before {
-    content: "";
-    position: absolute;
-    height: 0.125rem;
-    border-radius: 0.125rem 0.125rem 0 0;
-    background-color: var(--color-link);
-    top: -0.125rem;
-    left: 0;
-    right: 0;
   }
 }
 .app-blog {
