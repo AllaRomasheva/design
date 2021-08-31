@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--line-height-headings);
 }
 
-h1, h2, h3, h4, h5, h6, strong, b {
+h1, h2, h3, h4, h5, h6, strong, b, .bold {
   font-weight: var(--font-weight-bold);
 }
 
@@ -583,7 +583,7 @@ body {
   font-weight: var(--font-weight-bold);
   margin: 0;
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 30rem) {
   .app-header__link {
     font-size: 1rem;
   }
