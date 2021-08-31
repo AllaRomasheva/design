@@ -631,6 +631,8 @@ body {
   position: sticky;
   overflow: hidden;
   top: var(--header-height);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .app-banner + .app-page {
   box-shadow: 0px -1rem 1rem #fff;
