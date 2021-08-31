@@ -1,0 +1,21 @@
+<div class="app-card" data-card="">
+    <div class="app-card__content">
+        <div class="app-card__front">
+            <div class="app-card__image" data-cover="{{ item.cover | absolute_url }}"></div>
+            <div class="app-card__inner app-centered">
+                <h3 class="fs-3">{{ item.title }}</h3>
+                <p>{{ item.summary }}</p>
+                <div>
+                    <a href="#" data-flip="" class="app-card__button">{% include i18n id="Details" %}</a>
+                </div>
+            </div>
+        </div>
+        <div class="app-card__back">
+            <div class="app-card__inner">
+                <div class="app-card__wrapper" data-flip="">
+                    {{ item.content | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

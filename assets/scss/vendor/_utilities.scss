@@ -1,0 +1,30 @@
+@import "mixins";
+
+@include generate();
+
+@include phone-xs {
+  @include generate(-xs);
+}
+
+@include phone {
+  @include generate(-sm);
+}
+
+@include tablet {
+  @include generate(-md);
+}
+
+@include desktop {
+  @include generate(-lg);
+}
+
+@include desktop-xl {
+  @include generate(-xl);
+}
+
+
+
+
+
+
+

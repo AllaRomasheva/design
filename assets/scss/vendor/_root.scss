@@ -1,0 +1,48 @@
+:root{
+  --font-size: 16px;
+  --font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-weight-thin:100;
+  --font-weight-normal:400;
+  --font-weight-bold:500;
+  --font-size-small:.875em;
+  --line-height-base:1.5;
+  --line-height-headings:1.25;
+  --line-margin:1rem;
+}
+
+:root{
+  --link-decoration:underline;
+  --link-decoration-hover:none;
+  --link-decoration-active:none;
+}
+
+
+:root {
+  --gap: 2rem;
+}
+
+
+@include phone-xs {
+  :root {
+    --gap: 1rem;
+  }
+}
+
+:root {
+  --header-background: transparent;
+  --header-title-visibility: block;
+  --header-shadow: none;
+  --header-height: 5rem;
+  --header-logo: 1.5rem;
+  --header-icon: 2rem;
+  --header-nav: 3rem;
+}
+
+@include phone {
+  :root {
+    --header-icon: 1.75rem;
+    --header-height: 4rem;
+    --header-title-visibility: none;
+  }
+}

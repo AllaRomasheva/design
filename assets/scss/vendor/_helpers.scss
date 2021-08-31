@@ -1,0 +1,34 @@
+%fixed-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+%layout{
+  position: relative;
+  margin: 0 auto;
+  max-width: 64rem;
+  width: 100%;
+  min-height: 100%;
+}
+
+%cover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+%relative{
+  position:relative;
+}
+
+%user-select{
+  user-select: none;
+}
+
+%bg-white{
+  background-color: #ffffff;
+}

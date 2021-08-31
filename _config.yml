@@ -17,6 +17,8 @@ exclude:
 environment: production
 repository: kosatyi/romasheva.design
 
+markdown_ext: markdown,md,liquid
+
 #Others
 markdown: kramdown
 port: 4004
