@@ -19,10 +19,11 @@
 }
 
 @mixin active {
-  &.active{
+  &:active,&.active{
     @content;
   }
 }
+
 
 
 @mixin print {

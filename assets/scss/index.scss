@@ -174,6 +174,7 @@
 .app-cv-button{
   --link-color: var(--color-primary);
   --link-color-hover:var(--color-pink);
+  --link-color-active:var(--color-pink);
   --link-decoration: none;
   display:flex;
   flex:1;
@@ -184,8 +185,14 @@
   border-radius:.5rem;
   border:2px solid;
   font-weight:var(--font-weight-bold);
+  transition: all .3s ease-in-out;
+  outline:none;
   @include hover-focus-active{
     box-shadow:0 0 0 .25rem var(--color-pink-shadow);
+  }
+  @include active{
+    position:relative;
+    top:.125rem;
   }
 }
 
