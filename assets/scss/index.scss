@@ -26,6 +26,8 @@
   padding: 0 var(--gap);
 }
 
+
+
 .app-header {
 
   @extend %fixed-top;
@@ -110,6 +112,7 @@
 .app-centered {
   align-items: center;
   justify-content: center;
+  text-align:center;
 }
 
 .app-page {
@@ -209,12 +212,12 @@
     --entry-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
   }
 
-  &-link {
+  &__link {
     @extend %cover;
     z-index: 100;
   }
 
-  &-cover {
+  &__cover {
     position: relative;
 
     &:before {
@@ -233,14 +236,14 @@
     }
   }
 
-  &-image {
+  &__image {
     @extend %cover;
     transition: all 0.3s ease-in-out;
     border-radius: var(--entry-rounded);
     z-index: 2;
   }
 
-  &-content {
+  &__content {
     border-radius: 0 0 .5rem .5rem;
     padding: 1rem;
   }
@@ -392,9 +395,7 @@
       border-top-right-radius: 0;
     }
   }
-
 }
-
 
 .app-empty {
   grid-column-start: 1;
@@ -404,5 +405,3 @@
   text-align: center;
   border-radius: .5rem;
 }
-
-

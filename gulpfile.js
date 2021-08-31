@@ -1,6 +1,5 @@
 const {gulp,jsBundler,scssBundler,svgBundler} = require('gulp2go');
 
-
 const replace = require('gulp-string-replace');
 const favicons = require("favicons");
 const through = require('through2');
@@ -71,7 +70,7 @@ gulp.task('sprite', function(){
 });
 
 gulp.task('scss',function(){
-    return scssBundler('./assets/scss/*.scss','assets/css');
+    return scssBundler('assets/scss/*.scss','assets/css');
 });
 
 gulp.task('js', function(){
