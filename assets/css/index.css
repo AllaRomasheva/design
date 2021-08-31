@@ -31,7 +31,7 @@
   --color-cyan: #0DCAF0;
   --color-primary: #303030;
   --color-dark: #545454;
-  --color-secondary: #7d7d7d;
+  --color-secondary: #646464;
   --color-success: #5b9e27;
   --color-danger: #ba0f51;
   --color-warning: #e79566;
@@ -273,7 +273,7 @@ body {
 }
 
 .c-secondary {
-  --color: #7d7d7d;
+  --color: #646464;
 }
 
 .c-success {
@@ -637,6 +637,21 @@ body {
 }
 .app-banner + .app-page {
   box-shadow: 0px -1rem 1rem #fff;
+}
+
+.app-cv-button {
+  --link-color: var(--color-primary);
+  --link-color-hover:var(--color-pink);
+  --link-decoration: none;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  font-weight: var(--font-weight-bold);
 }
 
 .app-rows {

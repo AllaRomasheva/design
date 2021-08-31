@@ -171,6 +171,21 @@
 
 }
 
+.app-cv-button{
+  --link-color: var(--color-primary);
+  --link-color-hover:var(--color-pink);
+  --link-decoration: none;
+  display:flex;
+  flex:1;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+  padding:1rem;
+  border-radius:.5rem;
+  border:1px solid;
+  font-weight:var(--font-weight-bold);
+}
+
 
 .app-rows {
   display: grid;
