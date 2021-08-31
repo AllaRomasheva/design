@@ -72,15 +72,11 @@
     display:flex;
     flex-direction: row;
     align-items: center;
-    @include phone {
-      display: none;
-    }
   }
 
   &__logo {
     margin: 0 auto 0 0;
     font-size: var(--header-logo);
-
     svg {
       height: var(--header-icon);
       width: var(--header-icon);
@@ -95,12 +91,18 @@
 
   &__title {
     margin-left: .5rem;
+    @include phone {
+      display:none;
+    }
   }
 
   &__link {
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
     margin: 0;
+    @include phone {
+      font-size:1rem;
+    }
   }
 
   &__link + &__link {

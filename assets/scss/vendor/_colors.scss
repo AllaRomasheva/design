@@ -1,15 +1,7 @@
 @import "variables";
 
-:root {
-  @each $color, $value in $base-colors {
-    --color-#{$color}: #{$value};
-  }
-  @each $color, $value in $state-colors {
-    --color-#{$color}: #{$value};
-  }
-  @each $color, $value in $brand-colors {
-    --color-#{$color}: #{$value};
-  }
+[class*="c-"]{
+  color:var(--color);
 }
 
 @each $color, $value in $base-colors {
@@ -17,15 +9,11 @@
     --color: #{$value};
   }
 }
-
-
-
 @each $color, $value in $state-colors {
   .c-#{$color} {
     --color: #{$value};
   }
 }
-
 @each $color, $value in $brand-colors {
   .c-#{$color} {
     --color: #{$value};

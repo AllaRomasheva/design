@@ -1,20 +1,54 @@
 :root {
   --font-size: 16px;
-  --font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --font-weight-thin:100;
+  --font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  --font-weight-thin: 300;
   --font-weight-normal:400;
-  --font-weight-bold:500;
-  --font-size-small:.875em;
+  --font-weight-bold: 500;
+  --font-size-small: 0.875rem;
   --line-height-base:1.5;
   --line-height-headings:1.25;
   --line-margin:1rem;
 }
 
 :root {
-  --link-decoration:underline;
+  --link-decoration: underline;
   --link-decoration-hover:none;
   --link-decoration-active:none;
+}
+
+:root {
+  --color-blue: #0D6EFD;
+  --color-pink: #D63384;
+  --color-gold: #FFD700;
+  --color-indigo: #6610F2;
+  --color-purple: #6F42C1;
+  --color-red: #DC3545;
+  --color-orange: #FD7E14;
+  --color-yellow: #FFC107;
+  --color-green: #198754;
+  --color-teal: #20C997;
+  --color-cyan: #0DCAF0;
+  --color-primary: #303030;
+  --color-dark: #545454;
+  --color-secondary: #7d7d7d;
+  --color-success: #5b9e27;
+  --color-danger: #ba0f51;
+  --color-warning: #e79566;
+  --color-info: #353584;
+  --color-link: #4e4cbd;
+  --color-link-hover: #060534;
+  --color-link-visited: #060534;
+  --color-link-active: #ba0f51;
+  --color-facebook: #3b5998;
+  --color-linkedin: #0077b5;
+  --color-dribbble: #ea4c89;
+  --color-behance: #1769ff;
+  --color-instagram: #c13584;
+  --color-pinterest: #BD081C;
+  --color-twitter: #1DA1F2;
+  --color-github: #6e5494;
+  --color-pexels: #05a081;
 }
 
 :root {
@@ -128,10 +162,6 @@ a.active {
           text-decoration: var(--link-decoration-active);
 }
 
-[class*=c-] {
-  color: var(--color);
-}
-
 html {
   font-size: var(--font-size, 16px);
 }
@@ -186,38 +216,8 @@ body {
   background-color: #ffffff;
 }
 
-:root {
-  --color-blue: #0D6EFD;
-  --color-pink: #D63384;
-  --color-gold: #FFD700;
-  --color-indigo: #6610F2;
-  --color-purple: #6F42C1;
-  --color-red: #DC3545;
-  --color-orange: #FD7E14;
-  --color-yellow: #FFC107;
-  --color-green: #198754;
-  --color-teal: #20C997;
-  --color-cyan: #0DCAF0;
-  --color-primary: #303030;
-  --color-dark: #545454;
-  --color-secondary: #7d7d7d;
-  --color-success: #5b9e27;
-  --color-danger: #ba0f51;
-  --color-warning: #e79566;
-  --color-info: #353584;
-  --color-link: #4e4cbd;
-  --color-link-hover: #060534;
-  --color-link-visited: #060534;
-  --color-link-active: #ba0f51;
-  --color-facebook: #3b5998;
-  --color-linkedin: #0077b5;
-  --color-dribbble: #ea4c89;
-  --color-behance: #1769ff;
-  --color-instagram: #c13584;
-  --color-pinterest: #BD081C;
-  --color-twitter: #1DA1F2;
-  --color-github: #6e5494;
-  --color-pexels: #05a081;
+[class*=c-] {
+  color: var(--color);
 }
 
 .c-blue {
@@ -557,11 +557,6 @@ body {
   flex-direction: row;
   align-items: center;
 }
-@media screen and (max-width: 48rem) {
-  .app-header__nav {
-    display: none;
-  }
-}
 .app-header__logo {
   margin: 0 auto 0 0;
   font-size: var(--header-logo);
@@ -578,10 +573,20 @@ body {
 .app-header__title {
   margin-left: 0.5rem;
 }
+@media screen and (max-width: 48rem) {
+  .app-header__title {
+    display: none;
+  }
+}
 .app-header__link {
   font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
   margin: 0;
+}
+@media screen and (max-width: 48rem) {
+  .app-header__link {
+    font-size: 1rem;
+  }
 }
 .app-header__link + .app-header__link {
   margin-left: var(--gap);

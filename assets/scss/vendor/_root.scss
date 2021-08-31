@@ -1,27 +1,39 @@
-:root{
-  --font-size: 16px;
-  --font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --font-weight-thin:100;
-  --font-weight-normal:400;
-  --font-weight-bold:500;
-  --font-size-small:.875em;
-  --line-height-base:1.5;
-  --line-height-headings:1.25;
-  --line-margin:1rem;
+@import "variables";
+
+:root {
+  --font-size: #{$font-size-root};
+  --font-family-base: #{$font-family-base};
+  --font-family-mono: #{$font-family-mono};
+  --font-weight-thin: #{$font-weight-light};
+  --font-weight-normal:#{$font-weight-normal};
+  --font-weight-bold: #{$font-weight-bold};
+  --font-size-small: #{$font-size-sm};
+  --line-height-base:#{$line-height-base};
+  --line-height-headings:#{$line-height-sm};
+  --line-margin:#{$line-margin};
 }
 
-:root{
-  --link-decoration:underline;
-  --link-decoration-hover:none;
-  --link-decoration-active:none;
+:root {
+  --link-decoration: #{$link-decoration};
+  --link-decoration-hover:#{$link-decoration-hover};
+  --link-decoration-active:#{$link-decoration-active};
 }
 
+:root {
+  @each $color, $value in $base-colors {
+    --color-#{$color}: #{$value};
+  }
+  @each $color, $value in $state-colors {
+    --color-#{$color}: #{$value};
+  }
+  @each $color, $value in $brand-colors {
+    --color-#{$color}: #{$value};
+  }
+}
 
 :root {
   --gap: 2rem;
 }
-
 
 @include phone-xs {
   :root {
