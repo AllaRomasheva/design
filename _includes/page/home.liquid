@@ -17,7 +17,7 @@
 
 <div class="app-page" id="services">
     <div class="app-layout app-rows">
-        <div>
+        <div class="app-group">
             <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Services" %}</h2>
             <p class="m-0">{% include i18n id="I create solutions based on the real needs of the client" %}</p>
         </div>
@@ -32,7 +32,7 @@
 
 <div class="app-page" id="portfolio">
     <div class="app-layout app-rows">
-        <div>
+        <div class="app-group">
             <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Portfolio" %}</h2>
             <p class="m-0">{% include i18n id="Series of projects I have realized over the past years" %}</p>
         </div>
@@ -48,9 +48,11 @@
 <div class="app-page" id="contacts">
     <div class="app-layout app-rows">
         <div class="app-grid">
-            <div>
-                <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Contact me" %}</h2>
-                <p>{% include i18n id="If you have an open project or just need a consultation, you can contact me via" %}:</p>
+            <div class="app-rows-list">
+                <div class="app-group">
+                    <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Contact me" %}</h2>
+                    <p class="m-0">{% include i18n id="If you have an open project or just need a consultation, you can contact me via" %}:</p>
+                </div>
                 <div class="app-inline">
                     {% for item in site.contacts %}
                     {% capture name %}{{item[0]}}{% endcapture %}
@@ -61,9 +63,11 @@
                     {% endfor %}
                 </div>
             </div>
-            <div>
-                <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Follow me" %}</h2>
-                <p>{% include i18n id="Places where you can follow me and my work" %}:</p>
+            <div class="app-rows-list">
+                <div class="app-group">
+                    <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Follow me" %}</h2>
+                    <p class="mb-0">{% include i18n id="Places where you can follow me and my work" %}:</p>
+                </div>
                 <div class="app-inline">
                     {% for item in site.social.profiles %}
                     {% capture name %}{{item[0]}}-square{% endcapture %}
@@ -73,11 +77,11 @@
                     {% endfor %}
                 </div>
             </div>
-            <div>
-                <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Hire me" %}</h2>
-                <p class="mb-0">{% include i18n id="Here you can see my resume" %}</p>
-            </div>
-            <div>
+            <div class="app-rows-list">
+                <div class="app-group">
+                    <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Hire me" %}</h2>
+                    <p class="mb-0">{% include i18n id="Here you can see my resume" %}</p>
+                </div>
                 <a class="app-cv-button" href="https://romasheva.cv/{{ page.lang }}/">
                     <span class="icon mr-3">{% include icon name="address-card" %}</span>
                     {% include i18n id="Resume Page" %}
