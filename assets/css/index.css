@@ -686,6 +686,10 @@ body {
   margin: 0.5rem;
 }
 
+.app-relative {
+  position: relative;
+}
+
 .app-entry {
   --entry-shadow: none;
   --entry-rounded: .5rem;
