@@ -76,10 +76,10 @@ facebook:
 
 author:
   name: Alla Romasheva
-  url: https://romasheva.com/
-  twitter: aalliskaa
+  url: https://romasheva.design/
+  twitter: allaromasheva
   image:
-    path: /assets/images/alla.romasheva.jpeg
+    path: /assets/images/cover.jpg
     height: 512
     width: 512
 

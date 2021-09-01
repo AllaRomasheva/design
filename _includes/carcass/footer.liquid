@@ -1,14 +1,14 @@
 <div class="app-footer">
-    <div class="app-footer__layout app-rows">
+    <div class="app-footer__layout">
         <div class="app-grid">
             <div class="app-footer__copyright">
                 © 2018 - {{ "now" | date: "%Y" }} {% include i18n id=site.title %}. {% include i18n id="All Rights Reserved" %}.
             </div>
-            <div class="app-footer__languages">
-                <span class="nowrap c-secondary mr-2">{% include i18n id="Choose language" %}:</span>
-                <a href="{{ '/uk/' | absolute_url }}" hreflang="uk-UA" class="icon flag ml-2">{% include icon name='flag-uk' %}</a>
-                <a href="{{ '/en/' | absolute_url }}" hreflang="en-US" class="icon flag ml-2">{% include icon name='flag-en' %}</a>
-                <a href="{{ '/ru/' | absolute_url }}" hreflang="ru-RU" class="icon flag ml-2">{% include icon name='flag-ru' %}</a>
+            <div class="app-footer__languages app-gap">
+                <span class="nowrap c-secondary">{% include i18n id="Choose language" %}:</span>
+                <a href="{{ '/uk/' | absolute_url }}" hreflang="uk-UA" class="icon flag">{% include icon name='flag-uk' %}</a>
+                <a href="{{ '/en/' | absolute_url }}" hreflang="en-US" class="icon flag">{% include icon name='flag-en' %}</a>
+                <a href="{{ '/ru/' | absolute_url }}" hreflang="ru-RU" class="icon flag">{% include icon name='flag-ru' %}</a>
             </div>
         </div>
     </div>

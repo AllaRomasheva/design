@@ -1,5 +1,5 @@
-<div class="app-banner">
-    <div class="app-layout app-rows">
+<div class="app-page app-page-sticky">
+    <div class="app-page__layout">
         <div class="browser">
             <div class="browser__toolbar">
                 <div class="browser__buttons"><i></i><i></i><i></i></div>
@@ -7,8 +7,8 @@
             </div>
             <div class="browser__window">
                 <div class="browser__document">
-                    <h2 class="fs-1 fs-sm-3 text-center m-0">{% include i18n id="UI/UX Designer" %}</h2>
-                    <h3 class="fs-3 fs-sm-6 text-center m-0 c-secondary">{% include i18n id="Designing and building intuitive, aesthetic digital products" %}</h3>
+                    <h2 class="browser__title">{% include i18n id="UI/UX Designer" %}</h2>
+                    <h3 class="browser__summary c-secondary">{% include i18n id="Designing and building intuitive, aesthetic digital products" %}</h3>
                 </div>
             </div>
         </div>
@@ -16,10 +16,10 @@
 </div>
 
 <div class="app-page" id="services">
-    <div class="app-layout app-rows">
-        <div class="app-group">
-            <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Services" %}</h2>
-            <p class="m-0">{% include i18n id="I create solutions based on the real needs of the client" %}</p>
+    <div class="app-page__layout">
+        <div class="app-section">
+            <h2 class="app-section__title">{% include i18n id="Services" %}</h2>
+            <p class="app-section__summary">{% include i18n id="I create solutions based on the real needs of the client" %}</p>
         </div>
         <div class="app-grid">
             {% assign list = site.data.services[page.lang] | default: site.data.services.en %}
@@ -31,8 +31,8 @@
 </div>
 
 <div class="app-page" id="portfolio">
-    <div class="app-layout app-rows">
-        <div class="app-group">
+    <div class="app-page__layout">
+        <div class="app-section">
             <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Portfolio" %}</h2>
             <p class="m-0">{% include i18n id="Series of projects I have realized over the past years" %}</p>
         </div>
@@ -46,27 +46,27 @@
 </div>
 
 <div class="app-page" id="contacts">
-    <div class="app-layout app-rows">
+    <div class="app-page__layout">
         <div class="app-grid">
-            <div class="app-rows-list">
-                <div class="app-group">
-                    <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Contact me" %}</h2>
-                    <p class="m-0">{% include i18n id="If you have an open project or just need a consultation, you can contact me via" %}:</p>
+            <div class="app-rows">
+                <div class="app-section">
+                    <h2 class="app-section__title">{% include i18n id="Contact me" %}</h2>
+                    <p class="app-section__summary">{% include i18n id="If you have an open project or just need a consultation, you can contact me via" %}:</p>
                 </div>
                 <div class="app-inline">
                     {% for item in site.contacts %}
                     {% capture name %}{{item[0]}}{% endcapture %}
                     <a href="{{ item[1] }}" class="app-inline__item" rel="author">
-                        <div class="icon large c-{{item[0]}}">{% include icon name=name %}</div>
-                        <div class="ml-2 bold">{{item[0] | capitalize}}</div>
+                        <div class="icon mr large c-{{item[0]}}">{% include icon name=name %}</div>
+                        <div class="bold">{{item[0] | capitalize}}</div>
                     </a>
                     {% endfor %}
                 </div>
             </div>
-            <div class="app-rows-list">
-                <div class="app-group">
-                    <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Follow me" %}</h2>
-                    <p class="mb-0">{% include i18n id="Places where you can follow me and my work" %}:</p>
+            <div class="app-rows">
+                <div class="app-section">
+                    <h2 class="app-section__title">{% include i18n id="Follow me" %}</h2>
+                    <p class="app-section__summary">{% include i18n id="Places where you can follow me and my work" %}:</p>
                 </div>
                 <div class="app-inline">
                     {% for item in site.social.profiles %}
@@ -77,13 +77,13 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="app-rows-list">
-                <div class="app-group">
+            <div class="app-rows">
+                <div class="app-section">
                     <h2 class="fs-2 fs-sm-3 m-0">{% include i18n id="Hire me" %}</h2>
                     <p class="mb-0">{% include i18n id="Here you can see my resume" %}</p>
                 </div>
                 <a class="app-cv-button" href="https://romasheva.cv/{{ page.lang }}/">
-                    <span class="icon mr-3">{% include icon name="address-card" %}</span>
+                    <span class="icon mr">{% include icon name="address-card" %}</span>
                     {% include i18n id="Resume Page" %}
                 </a>
             </div>

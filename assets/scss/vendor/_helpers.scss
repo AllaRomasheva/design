@@ -32,3 +32,73 @@
 %bg-white{
   background-color: #ffffff;
 }
+
+
+%grid-rows{
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-gap: var(--spacer);
+}
+
+%flex{
+  display:flex;
+}
+
+%flex-inline{
+  display:inline-flex;
+}
+
+%flex-wrap{
+  flex-wrap: wrap;
+}
+
+%flex-nowrap{
+  flex-wrap: nowrap;
+}
+
+%flex-row{
+  @extend %flex;
+  flex-direction: row;
+}
+
+%flex-row-reverse{
+  @extend %flex;
+  flex-direction: row-reverse;
+}
+
+%flex-column{
+  @extend %flex;
+  flex-direction: column;
+}
+
+%flex-column-reverse{
+  @extend %flex;
+  flex-direction: column-reverse;
+}
+
+%flex-middle{
+  align-items: center;
+}
+
+%flex-bottom{
+  align-items: flex-end;
+}
+
+%flex-top{
+  align-items: flex-start;
+}
+
+%flex-start{
+  justify-content: flex-start;
+}
+
+%flex-end{
+  justify-content: flex-end;
+}
+
+%flex-center{
+  justify-content: center;
+}
+
+
+

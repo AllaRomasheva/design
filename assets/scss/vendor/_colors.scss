@@ -9,11 +9,13 @@
     --color: #{$value};
   }
 }
+
 @each $color, $value in $state-colors {
   .c-#{$color} {
     --color: #{$value};
   }
 }
+
 @each $color, $value in $brand-colors {
   .c-#{$color} {
     --color: #{$value};
