@@ -847,8 +847,6 @@ body {
 }
 .app-entry__cover {
   position: relative;
-  overflow: hidden;
-  border-radius: var(--entry-rounded);
 }
 .app-entry__cover:before {
   content: "";
@@ -857,11 +855,13 @@ body {
 }
 .app-entry__cover:after {
   content: "";
-  transition: all 0.3s ease-in-out;
+  transition: border-radius 0.3s ease-in-out;
+  border-radius: var(--entry-rounded);
   background: linear-gradient(40deg, rgba(78, 76, 189, 0.3), rgba(186, 15, 81, 0.3));
   z-index: 3;
 }
 .app-entry__image {
+  transition: border-radius 0.3s ease-in-out;
   border-radius: var(--entry-rounded);
   z-index: 2;
 }
