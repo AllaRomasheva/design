@@ -231,7 +231,7 @@ body {
   min-height: 100%;
 }
 
-.app-card__back, .app-card__image, .app-card__inner, .app-card__front:after, .app-entry__image, .app-entry__cover:after, .app-entry__link {
+.app-card__back, .app-card__image, .app-card__inner, .app-card__front:after, .app-entry__image, .app-entry__cover:after, .app-entry__link, .app-page__cover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -239,7 +239,7 @@ body {
   left: 0;
 }
 
-.app-footer, .app-page {
+.app-footer, .app-page__layout, .app-page {
   position: relative;
 }
 
@@ -715,10 +715,21 @@ body {
   text-align: center;
 }
 
+.app-fluid {
+  flex: 1;
+}
+
 .app-page {
   padding: var(--spacer);
   z-index: 10;
 }
+.app-page__layout {
+  z-index: 10;
+}
+.app-page__cover {
+  z-index: 5;
+}
+
 .app-page-sticky {
   overflow: hidden;
   position: sticky;

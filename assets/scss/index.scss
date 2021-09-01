@@ -114,6 +114,10 @@
   text-align:center;
 }
 
+.app-fluid{
+  flex:1;
+}
+
 .app-page {
   @extend %bg-white;
   @extend %relative;
@@ -123,6 +127,12 @@
   &__layout{
     @extend %layout;
     @extend %grid-rows;
+    @extend %relative;
+    z-index:10;
+  }
+  &__cover{
+    @extend %cover;
+    z-index:5;
   }
 }
 
