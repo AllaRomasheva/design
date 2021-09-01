@@ -5,6 +5,7 @@ const cover = (el) => {
     el.removeAttribute('data-cover');
     el.style.backgroundImage = `url(${url})`;
     el.style.backgroundSize = 'cover';
+    el.style.backgroundPosition = 'center center';
 }
 
 if ('IntersectionObserver' in window) {

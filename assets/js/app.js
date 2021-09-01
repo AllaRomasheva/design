@@ -23,6 +23,7 @@ var cover = function cover(el) {
   el.removeAttribute('data-cover');
   el.style.backgroundImage = "url(".concat(url, ")");
   el.style.backgroundSize = 'cover';
+  el.style.backgroundPosition = 'center center';
 };
 
 if ('IntersectionObserver' in window) {

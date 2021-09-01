@@ -132,9 +132,10 @@
   }
   &__cover{
     @extend %cover;
-    z-index:5;
+    @extend %noise;
   }
 }
+
 
 .app-page-sticky{
   overflow: hidden;
@@ -266,18 +267,17 @@
 
   &__cover {
     position: relative;
-
+    overflow:hidden;
+    border-radius: var(--entry-rounded);
     &:before {
       content: '';
       padding-top: calc(9 / 16 * 100%);
       display: block;
     }
-
     &:after {
       @extend %cover;
       content: '';
       transition: all 0.3s ease-in-out;
-      border-radius: var(--entry-rounded);
       background: linear-gradient(40deg, rgba(#4e4cbd, 0.3), rgba(#ba0f51, 0.3));
       z-index: 3;
     }
@@ -285,7 +285,6 @@
 
   &__image {
     @extend %cover;
-    transition: all 0.3s ease-in-out;
     border-radius: var(--entry-rounded);
     z-index: 2;
   }
