@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixins";
 
 :root {
   --font-size: #{$font-size-root};
@@ -25,8 +25,6 @@
     --fs-#{$i}: #{$value};
   }
 }
-
-$alpha: 33;
 
 :root {
   @each $color, $value in $base-colors {
