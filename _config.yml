@@ -56,7 +56,7 @@ social:
     facebook: https://www.facebook.com/100024493295482
     twitter: https://twitter.com/AllaRomasheva
     instagram: https://www.instagram.com/romasheva.design/
-    linkedin: https://www.linkedin.com/in/алла-ромашева-051390174/
+    linkedin: https://www.linkedin.com/in/romasheva/
     behance: https://www.behance.net/romasheva
     pinterest: https://www.pinterest.com/romasevaalla38/
     dribbble: https://dribbble.com/romasheva
@@ -112,12 +112,10 @@ defaults:
       path: 'en'
     values:
       lang: 'en'
-
   - scope:
       path: 'ru'
     values:
       lang: 'ru'
-
   - scope:
       path: 'uk'
     values:
