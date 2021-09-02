@@ -974,12 +974,12 @@ a.active {
   overflow-y: auto;
 }
 .app-card__title {
-  --fs-h:var(--fs-h3);
+  --fs-h:var(--fs-3);
   --line-margin: 1rem;
 }
 @media screen and (max-width: 48rem) {
   .app-card__title {
-    --fs-h:var(--fs-h4);
+    --fs-h:var(--fs-4);
     --line-margin: .5rem;
   }
 }
