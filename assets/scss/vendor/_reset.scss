@@ -1,3 +1,5 @@
+@import "variables";
+
 @media (prefers-reduced-motion:no-preference){
   :root{
     scroll-behavior:smooth
@@ -13,16 +15,28 @@ html,body{
   padding:0;
 }
 
+html{
+  font-size:var(--font-size,16px);
+}
+
+body{
+  font-family:var(--font-family-base);
+  font-weight:var(--font-weight-normal);
+  line-height:var(--line-height-base);
+  background:var(--page-background);
+  padding:var(--page-padding);
+  color:var(--color-primary);
+  min-height:100vh;
+  display:block;
+  position:relative;
+}
+
 figure{
   padding:0;
   margin:0;
 }
 
-@each $i, $value in $font-sizes {
-  h#{$i}{
-    --fs-h: var(--fs-h#{$i});
-  }
-}
+
 
 h1,h2,h3,h4,h5,h6{
   font-size:var(--fs-h);
@@ -38,9 +52,9 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,blockquote,figure{
   text-align: var(--text-align,left);
 }
 
-section{
-  :last-child{
-    margin-bottom:0;
+@each $i, $value in $font-sizes {
+  h#{$i}{
+    --fs-h: var(--fs-#{$i});
   }
 }
 
@@ -67,15 +81,6 @@ ul{
   }
 }
 
-article{
-  :last-child{
-    margin-bottom:0;
-  }
-  + article {
-    margin-top:var(--grid-padding);
-  }
-}
-
 a{
   color:var(--link-color,var(--color-link));
   fill:var(--link-color,var(--color-link));
@@ -93,20 +98,30 @@ a{
   }
 }
 
-html{
-  font-size:var(--font-size,16px);
+
+
+[class*="c-"]{
+  color:var(--color);
 }
 
-body{
-  font-family:var(--font-family-base);
-  font-weight:var(--font-weight-normal);
-  line-height:var(--line-height-base);
-  background:var(--page-background);
-  padding:var(--page-padding);
-  color:var(--color-primary);
-  min-height:100vh;
-  display:block;
-  position:relative;
+@each $color, $value in $base-colors {
+  .c-#{$color} { --color: #{$value} }
+}
+
+@each $color, $value in $state-colors {
+  .c-#{$color} { --color: #{$value} }
+}
+
+@each $color, $value in $brand-colors {
+  .c-#{$color} { --color: #{$value} }
+}
+
+[class*="fs-"]{
+  font-size:var(--fs);
+}
+
+@each $i, $value in $font-sizes {
+  .fs-#{$i}{ --fs: #{$value} }
 }
 
 
