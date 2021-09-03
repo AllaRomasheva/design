@@ -5,12 +5,10 @@
   padding:var(--spacer);
   z-index: 10;
   border-top: 1px solid #f5f5f5;
-  @include phone{
-    padding-bottom:calc( var(--spacer) * 3);
-  }
   &__layout {
     @extend %layout;
     @extend %grid-rows;
+    padding-bottom:env(safe-area-inset-bottom,0);
   }
   &__copyright {
 
