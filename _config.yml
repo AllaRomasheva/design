@@ -90,8 +90,8 @@ defaults:
         height: '600'
       seo:
         links:
-          - https://romasheva.com
-          - https://romasheva.cv
+          - https://romasheva.com/
+          - https://romasheva.cv/
           - https://www.facebook.com/romasheva.design/
           - https://www.instagram.com/romasheva.design/
           - https://twitter.com/allaromasheva
