@@ -47,12 +47,6 @@ gulp.task('favicon', function(){
         .pipe(gulp.dest(iconPath));
 });
 
-
-gulp.task('bootstrap', function(){
-    return gulp.src('node_modules/bootstrap/scss/**/*.*')
-        .pipe(gulp.dest('assets/scss/bootstrap'))
-});
-
 gulp.task('sprite', function(){
     return svgBundler('assets/icons/**/*.svg','sprite.svg','assets');
 });
