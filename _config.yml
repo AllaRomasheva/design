@@ -110,14 +110,14 @@ defaults:
       permalink: '/:categories/:title.html'
 
   - scope:
-      path: 'en'
+      path: 'page/en'
     values:
       lang: 'en'
   - scope:
-      path: 'ru'
+      path: 'page/ru'
     values:
       lang: 'ru'
   - scope:
-      path: 'uk'
+      path: 'page/uk'
     values:
       lang: 'uk'
