@@ -29,6 +29,8 @@ $link-decoration: underline;
 $link-decoration-hover: none;
 $link-decoration-active: none;
 
+$alpha: 33;
+
 $font-sizes: (
         1: $h1-font-size,
         2: $h2-font-size,
@@ -41,7 +43,6 @@ $font-sizes: (
 $base-colors: (
         "blue": #0D6EFD,
         "pink": #D63384,
-        "pink-shadow": #D6338433,
         "gold": #FFD700,
         "indigo": #6610F2,
         "purple": #6F42C1,
@@ -56,6 +57,7 @@ $base-colors: (
 $state-colors: (
         "primary": #303030,
         "dark": #545454,
+        "light": #e5e5e5,
         "secondary": #646464,
         "success": #5b9e27,
         "danger": #ba0f51,

@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 :root {
   --font-size: #{$font-size-root};
@@ -21,19 +22,22 @@
 
 :root {
   @each $i, $value in $font-sizes {
-    --fs-h#{$i}: #{$value};
+    --fs-#{$i}: #{$value};
   }
 }
 
 :root {
   @each $color, $value in $base-colors {
     --color-#{$color}: #{$value};
+    --color-#{$color}-alpha: #{$value}#{$alpha};
   }
   @each $color, $value in $state-colors {
     --color-#{$color}: #{$value};
+    --color-#{$color}-alpha: #{$value}#{$alpha};
   }
   @each $color, $value in $brand-colors {
     --color-#{$color}: #{$value};
+    --color-#{$color}-alpha: #{$value}#{$alpha};
   }
 }
 
