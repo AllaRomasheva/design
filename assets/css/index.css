@@ -27,6 +27,8 @@
 }
 
 :root {
+  --color-white: #FFFFFF;
+  --color-white-alpha: #FFFFFF33;
   --color-blue: #0D6EFD;
   --color-blue-alpha: #0D6EFD33;
   --color-pink: #D63384;
@@ -194,6 +196,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--line-height-headings);
 }
 
+.lh-h {
+  line-height: var(--line-height-headings);
+}
+
 h1, h2, h3, h4, h5, h6, strong, b, .bold {
   font-weight: var(--font-weight-bold);
 }
@@ -201,6 +207,9 @@ h1, h2, h3, h4, h5, h6, strong, b, .bold {
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, figure {
   margin: 0 0 var(--line-margin) 0;
   text-align: var(--text-align, left);
+}
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child, ul:last-child, ol:last-child, blockquote:last-child, figure:last-child {
+  --line-margin:0;
 }
 
 h1 {
@@ -272,6 +281,10 @@ a.active {
 
 [class*=c-] {
   color: var(--color);
+}
+
+.c-white {
+  --color: #FFFFFF ;
 }
 
 .c-blue {
@@ -428,6 +441,54 @@ a.active {
 
 .fs-6 {
   --fs: 1rem ;
+}
+
+.area-1 {
+  grid-area: a-1;
+}
+
+.area-2 {
+  grid-area: a-2;
+}
+
+.area-3 {
+  grid-area: a-3;
+}
+
+.area-4 {
+  grid-area: a-4;
+}
+
+.area-5 {
+  grid-area: a-5;
+}
+
+.area-6 {
+  grid-area: a-6;
+}
+
+.area-7 {
+  grid-area: a-7;
+}
+
+.area-8 {
+  grid-area: a-8;
+}
+
+.area-9 {
+  grid-area: a-9;
+}
+
+.area-10 {
+  grid-area: a-10;
+}
+
+.area-11 {
+  grid-area: a-11;
+}
+
+.area-12 {
+  grid-area: a-12;
 }
 
 .ratio {

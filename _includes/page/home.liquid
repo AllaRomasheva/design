@@ -48,6 +48,7 @@
 <div class="app-page" id="contacts">
     <div class="app-page__layout">
         <div class="app-grid">
+
             <div class="app-rows">
                 <div class="app-section">
                     <h2 class="app-section__title">{% include i18n id="Contact me" %}</h2>
@@ -63,6 +64,7 @@
                     {% endfor %}
                 </div>
             </div>
+
             <div class="app-rows">
                 <div class="app-section">
                     <h2 class="app-section__title">{% include i18n id="Follow me" %}</h2>
@@ -77,9 +79,7 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="app-rows">
-                {% include block/form.liquid %}
-            </div>
+
             <div class="app-rows">
                 <div class="app-section">
                     <h2 class="app-section__title">{% include i18n id="Hire me" %}</h2>
@@ -90,7 +90,11 @@
                     {% include i18n id="Resume Page" %}
                 </a>
             </div>
+
+            <div class="app-rows">
+                {% include block/form.liquid %}
+            </div>
+
         </div>
     </div>
 </div>
-
