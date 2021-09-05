@@ -71,7 +71,7 @@
                     <p class="app-section__summary">{% include i18n id="Places where you can follow me and my work" %}:</p>
                 </div>
                 <div class="app-inline">
-                    {% for item in site.social.profiles %}
+                    {% for item in site.profiles %}
                     {% capture name %}{{item[0]}}-square{% endcapture %}
                     <a href="{{ item[1] }}" title="{{item[0] | capitalize}}" class="app-inline__item" rel="author">
                         <div class="icon large c-{{item[0]}}">{% include icon name=name %}</div>
