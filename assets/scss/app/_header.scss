@@ -43,12 +43,13 @@
   }
 
   &__logo {
+    --link-color-hover: var(--color-primary);
     margin: 0 auto 0 0;
     font-size: var(--header-logo);
     svg {
       height: var(--header-icon);
       width: var(--header-icon);
-      fill: var(--color-link);
+      fill: var(--color-primary);
     }
     a {
       @extend %flex-row;
