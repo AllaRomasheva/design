@@ -48,7 +48,6 @@
 <div class="app-page" id="contacts">
     <div class="app-page__layout">
         <div class="app-grid">
-
             <div class="app-rows">
                 <div class="app-section">
                     <h2 class="app-section__title">{% include i18n id="Contact me" %}</h2>
@@ -58,13 +57,12 @@
                     {% for item in site.contacts %}
                     {% capture name %}{{item[0]}}{% endcapture %}
                     <a href="{{ item[1] }}" class="app-inline__item" rel="author">
-                        <div class="icon mr large c-{{item[0]}}">{% include icon name=name %}</div>
-                        <div class="bold">{{item[0] | capitalize}}</div>
+                        <div class="icon mr large c-{{name}}">{% include icon name=name %}</div>
+                        <div class="bold">{{name | capitalize}}</div>
                     </a>
                     {% endfor %}
                 </div>
             </div>
-
             <div class="app-rows">
                 <div class="app-section">
                     <h2 class="app-section__title">{% include i18n id="Follow me" %}</h2>
@@ -79,7 +77,6 @@
                     {% endfor %}
                 </div>
             </div>
-
             <div class="app-rows">
                 <div class="app-section">
                     <h2 class="app-section__title">{% include i18n id="Hire me" %}</h2>
@@ -90,11 +87,9 @@
                     {% include i18n id="Resume Page" %}
                 </a>
             </div>
-
             <div class="app-rows">
                 {% include block/form.liquid %}
             </div>
-
         </div>
     </div>
 </div>
