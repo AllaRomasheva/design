@@ -56,7 +56,7 @@
                 <div class="app-inline">
                     {% for item in site.contacts %}
                     {% capture name %}{{item[0]}}{% endcapture %}
-                    <a href="{{ item[0] | prepend: 'https://romasheva.com/' |  append: '/' }}" class="app-inline__item" rel="author">
+                    <a href="{{ item[0] | prepend: 'https://romasheva.com/social/' |  append: '/' }}" class="app-inline__item" rel="author">
                         <div class="icon mr large">{% include icon name=name %}</div>
                         <div class="bold">{{name | capitalize}}</div>
                     </a>
@@ -71,7 +71,7 @@
                 <div class="app-inline">
                     {% for item in site.profiles %}
                     {% capture name %}{{item[0]}}-square{% endcapture %}
-                    <a href="{{ item[0] | prepend: 'https://romasheva.com/' |  append: '/' }}" title="{{item[0] | capitalize}}" class="app-inline__item" rel="author">
+                    <a href="{{ item[0] | prepend: 'https://romasheva.com/social/' |  append: '/' }}" title="{{item[0] | capitalize}}" class="app-inline__item" rel="author">
                         <div class="icon large c-{{item[0]}}">{% include icon name=name %}</div>
                     </a>
                     {% endfor %}
