@@ -6,16 +6,18 @@
   --fs-4:1.25rem;
   --fs-5:1.25rem;
   --fs-6:1.25rem;
+  --line-margin: 1.5rem;
   --line-height-headings: 1.1;
   --line-height-base: 1.7;
   @include phone-xs {
     --fs:1.0625rem;
-    --fs-1:2rem;
+    --fs-1:1.75rem;
     --fs-2:1.5rem;
     --fs-3:1.25rem;
     --fs-4:1.125rem;
     --fs-5:1.125rem;
     --fs-6:1.125rem;
+    --line-margin: 1rem;
     --line-height-headings: 1.125;
     --line-height-base: 1.6;
   }
@@ -25,19 +27,21 @@
   max-width:48rem;
   margin:0 auto;
   &__title{
-    --line-margin: 1rem;
+    margin-bottom:0;
   }
   &__date{
-
+    display:inline-flex;
+    margin-bottom:var(--line-margin);
+    color:var(--color-link);
   }
   &__share{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    margin-bottom:1rem;
+    margin-bottom:var(--line-margin);
   }
   &__source + &__author{
-    margin-top:1rem;
+    margin-top:var(--line-margin);
   }
 }
 
@@ -60,13 +64,15 @@ button[data-share]{
 
 .app-post{
   figure{
-    @include phone{
+    @include phone-xs{
       margin-left:-1rem;
       margin-right:-1rem;
     }
     img{
       max-width:100%;
       display:block;
+      margin:0 auto;
     }
   }
 }
+
