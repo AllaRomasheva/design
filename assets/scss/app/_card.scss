@@ -65,6 +65,14 @@
     }
   }
 
+  &__link[href]{
+    --link-color: #fff;
+    --link-color-hover:#fff;
+    --link-decoration: none;
+    --link-decoration-hover: none;
+    --link-decoration-active: none;
+  }
+
   &__title{
     --fs-h:var(--fs-3);
     --line-margin: 1rem;

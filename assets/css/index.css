@@ -779,7 +779,7 @@ button[type=submit]:active {
 }
 .browser__title {
   --fs-h:var(--fs-1);
-  --line-margin:0;
+  --line-margin:1rem;
   --text-align:center;
 }
 @media screen and (max-width: 48rem) {
@@ -1186,6 +1186,13 @@ button[type=submit]:active {
 .active .app-card__wrapper {
   overflow-y: auto;
 }
+.app-card__link[href] {
+  --link-color: #fff;
+  --link-color-hover:#fff;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-decoration-active: none;
+}
 .app-card__title {
   --fs-h:var(--fs-3);
   --line-margin: 1rem;
@@ -1280,6 +1287,7 @@ button[type=submit]:active {
 .app-page-sticky {
   overflow: hidden;
   position: sticky;
+  z-index: 0;
   top: var(--header-height);
 }
 .app-page-sticky + .app-page {
@@ -1345,6 +1353,13 @@ button[data-share] + button[data-share] {
   margin-left: 0.5rem;
 }
 
+@media screen and (max-width: 48rem) {
+  .app-post figure {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
 .app-post figure img {
   max-width: 100%;
+  display: block;
 }

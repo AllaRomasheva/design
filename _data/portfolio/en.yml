@@ -1,103 +1,89 @@
-- title: UX Audit
-  cover: /assets/cover/uiaudit.png
+- title: UAZMI
+  url: https://uazmi.org/
+  cover: /assets/cover/uazmi.png
   summary: |
-    Through in-depth research, I will analyze your website, application,
-    or a product and suggest important changes to improve your business efficiency.
-  content: |
-    This is an expert assessment how your potential customers interact with your website/application, what they have
-    problems arise and what prevents target action from being performed.
-    - An interview, during which we clarify project task and purpose, concretize problems that need to be solved.
-    - User research, identification target audience, study their habits and desires, in order to
-      make your website/application easy to read.
-    - Researching entire user journey on site from moment of first contact to final goal, in order to
-      make your site/application clear and easy to use.
-    - Analysis site/application structure, technical aspects analysis: contrast, typography, content quality,
-      readability, navigation analysis, button functionality, adaptive versions.
-    - A report with recommendations in which all found problems will be structured and recommendations for their elimination are given.
+    A news aggregator where you can find out about current events in Ukraine and the world.
 
-- title: Research & Prototyping
-  cover: /assets/cover/prototype.png
-  summary: |
-    Researching your target audience: their habits and needs. I will create a clear visual representation your idea from a sketch
-    to a full-fledged prototype.
   content: |
-    Development a prototype is an important design stage, its purpose to show site/application structure,
-    check navigation and correctly arrange necessary elements and blocks.
-    - **Concept check** - will help customer to see a complete picture of what site/application will be in terms structure and
-      functionality. This is an irreplaceable thing when customer has not yet fully decided what kind of functionality is needed and on which pages.
-      should be located. Careful planning at prototyping stage will help to avoid mistakes and global changes at
-      final stages.
-    - **Technical research** will help test site/application usability, validate navigation,
-      establish a clear interaction between pages and correctly arrange information, as well as understand if there are any errors
-      on user's path and immediately find a solution.
-
-- title: Graphic Design
-  cover: /assets/cover/graphicdesign.png
-  summary: |
-    I will create a well-thought-out visual identity for your product. It will help you stand out from the competition and generate
-    indelible impression.
-  content: |
-    This is another important way of visual communication between user and your site/application/product, so you should
-    make sure that everything that surrounds client when interacting with your product creates a comfortable environment, is convenient
-    for perception and gave correct impression.
-    - At project start, its important to create comfortable conditions for perception information by your users, for this you should
-      take into account less visible, but very important details: harmony and balance, hierarchy and rhythm, proportion and typography.
-    - **Harmony and balance** - proportion and balance give a sense of security and makes you feel comfortable
-      in existing environment.
-    - **Hierarchy and rhythm** - size balances, colors, information presentation order, correct general perception
-      facility, allows you to control audience impression, attract and keep client’s attention on the right place.
-    - **Typography and readability** - well-chosen typeface, clear text hierarchy and well-chosen colors -
-      make textual information easy and pleasant to read.
-
-- title: Brand/Logo Design
-  cover: /assets/cover/branddesign.png
-  summary: |
-    I will help you start a dialogue with your clients. Create a company image with a clear message and unique features for
-    perception of your product.
-  content: |
-    **Brand design** is a set of attributes that distinguish your company from others and make it easily recognizable to customers.
-    To do this, you should develop a logo, corporate identity and ideology of your company and collect all this in a berndbook.
-    - A logo is a unique, laconic, recognizable symbol of your company/product; it is a trademark that
-      further will be associated with your brand.
-    - **Corporate identity** contains all necessary visual and informational features of your brand: logo, color scheme,
-      fonts, graphics, illustrations, etc. - this will help make your company/product recognizable and distinguish among
-      competitors.
-    - **Brand book** is an internal corporate document that will help you carry out marketing and advertising activities,
-      will ensure safety and correct use of your ideological principles and a single design concept with all
-      graphic elements.
+    [UAZMI](https://www.behance.net/gallery/145912525/UAZMI-news-aggregate)
+    - Analyzed competitors and target audience
+    - Developed the site architecture and convenient navigation
+    - Created a sketch and developed a prototype
+    - Developed a clean minimalist design
+    - Developed &nbsp; [logo book](https://www.behance.net/gallery/145910439/LogoBook-UAZMI)
 
 
-- title: Web Design
-  cover: /assets/cover/webdesign.png
+- title: BARBARICUM
+  url: https://barbaricum.org/
+  cover: /assets/cover/barbaricum.png
   summary: |
-    I will make web page design thoughtful, we will choose a solution that will
-    right for your business. I will make web page convenient with responsive web design
-    optimized for each type of device.
-  content: |
-    **Web design** - it creates a visual image of your company/product on the Internet.
-    This is a way to familiarize your customers with your product in more detail and convey necessary information in a way convenient for them.
-    - First, you need to determine goals and objectives for creating a website in order to choose right design solutions for solving
-      exactly your tasks.
-    - **Develop site architecture**, find out the list of necessary functions and sections, plan navigation so that your
-      site was convenient to use and performed necessary functions.
-    - To develop a visual design, choose colors, graphics, illustrations, photo materials, fonts, etc. - this is
-      will help to create your unique features interesting and recognizable, and create a comfortable environment for using your
-      site.
-    - **Responsive design** is also a necessary step. Adaptations for various types of devices should be developed for comfortable
-      the use of your site by users.
+    Educational research laboratory of archaeological research.
 
-- title: App Design
-  cover: /assets/cover/appdesign.png
-  summary: |
-    You can create a customer experience and improve efficiency of your interactions by using an intuitive
-    clear and optimized mobile application.
   content: |
-    **Mobile application** - will help you get a direct and convenient channel of communication with your customers, will help you profitably
-    to distinguish you among competitors as an advanced company that takes care of its customers and provides them with a more convenient and comfortable
-    way of interacting with company/product.
-    - Well thought out interface - consider users habits, environment in which they will usually use
-      your application and convenient and simple navigation - so that client gives preference to your application every time,
-      and therefore your company/product.
-    - Visual design of your application should be in line with overall style of your brand, and have more interesting graphics.
-    - The main goal is to make convenient and well-thought-out functionality so that user understands what he has to do
-      to get a service/product, so for this you need to make a route to main goal as much as possible posts.
+    [BARBARICUM](https://www.behance.net/gallery/146024101/BARBARICUM)
+    - Developed the site architecture and convenient navigation
+    - Created a sketch and developed a prototype
+    - Developed a clean minimalist design
+    - Developed &nbsp; [logo book](https://www.behance.net/gallery/146010547/Logobook-Barbaricum)
+
+
+- title: Policlinika Simya
+  url: https://poliklinikasimya.com/
+  cover: /assets/cover/policlinica.png
+  summary: |
+    A modern medical center for the whole family.
+
+  content: |
+    [Policlinika Simya](https://www.behance.net/gallery/137886987/UIUX-Design-polklnka-smja)
+    - Conducted analysis of direct competitors and target audience
+    - Developed the site architecture and convenient navigation
+    - Developed a prototype, design, adaptive
+    - Picked up colors, painted a set of icons
+    - Created materials for filling social networks
+    - Developed &nbsp; [brand book](https://romasheva.com/files/pdf/policlinica-brandbook.en.pdf).
+
+
+- title: Magic Room
+  url: https://www.behance.net/gallery/145595605/Magic-Room
+  cover: /assets/cover/magiroom.png
+  summary: |
+    A private company engaged in repair and arrangement of children's rooms.
+
+  content: |
+    [Magic Room](https://www.behance.net/gallery/145595605/Magic-Room)
+    - Conducted analysis of direct competitors and target audience
+    - Created a mental profile of the visitor
+    - Developed the site architecture and convenient navigation
+    - Developed a prototype
+    - She developed the design and adaptations
+
+
+- title: AMAZYNGLI
+  url: https://www.behance.net/gallery/141260313/Amazingly
+  cover: /assets/cover/amazyngli.png
+  summary: |
+    Design concept for search and selection service masters from the beauty field.
+
+  content: |
+    [Amazyngli](https://www.behance.net/gallery/141260313/Amazingly)
+    - Conducted analysis of direct competitors and target audience
+    - Created a mental profile of visitors
+    - Developed the site architecture and convenient navigation
+    - Developed a prototype
+    - Picked up the colors
+    - Developed the initial design
+
+
+- title: JUST EASY
+  url: https://dribbble.com/shots/19028977-JustEasy
+  cover: /assets/cover/justeasy.png
+  summary: |
+    Mobile application design concept.
+
+  content: |
+    [JustEasy](https://dribbble.com/shots/19028977-JustEasy)
+    - Structure design and navigation
+    - User interface
+    - Onboarding and user script
+    - Prototype
+    - Design concept

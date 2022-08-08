@@ -38,7 +38,6 @@ analytics: G-TPL3NET896
 languages:
   en: en-US
   uk: uk-UA
-  ru: ru-RU
 
 social:
   name: Alla Romasheva (Алла Ромашева)
@@ -84,19 +83,12 @@ defaults:
       layout: 'default'
       alternate:
         en: '/en/'
-        ru: '/ru/'
         uk: '/uk/'
       image:
         path: '/assets/images/cover.jpg'
         width: '1000'
         height: '600'
 
-  - scope:
-      path: ''
-      type: 'posts'
-    values:
-      layout: 'post'
-      permalink: '/:categories/:title.html'
 
   - scope:
       path: 'page/uk'
@@ -116,11 +108,3 @@ defaults:
           - https://romasheva.com/en/
           - https://romasheva.cv/en/
 
-  - scope:
-      path: 'page/ru'
-    values:
-      lang: 'ru'
-      seo:
-        links:
-          - https://romasheva.com/ru/
-          - https://romasheva.cv/ru/

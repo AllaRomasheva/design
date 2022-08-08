@@ -65,9 +65,11 @@
     flex-direction: column;
     padding:var(--spacer);
   }
+
+
   &__title{
     --fs-h:var(--fs-1);
-    --line-margin:0;
+    --line-margin:1rem;
     --text-align:center;
     @include phone {
       --fs-h:var(--fs-3);
