@@ -1086,14 +1086,20 @@ button[type=submit]:active {
   border-radius: 0.5rem;
   box-shadow: var(--entry-shadow);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .app-entry:hover {
   --entry-rounded: .5rem .5rem 0 0;
   --entry-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1);
 }
+.app-entry__fluid {
+  flex: 1;
+}
 .app-entry__link {
   z-index: 100;
   border-radius: 0.5rem;
+  text-indent: -99999px;
 }
 .app-entry__cover {
   position: relative;
@@ -1118,10 +1124,14 @@ button[type=submit]:active {
 .app-entry__content {
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .app-entry__date {
   font-size: var(--font-size-small);
-  color: var(--color-dark);
+  color: var(--color-link);
+  margin-bottom: 0.5rem;
 }
 .app-entry__title {
   --fs-h: var(--fs-5);
@@ -1302,18 +1312,20 @@ button[type=submit]:active {
   --fs-4:1.25rem;
   --fs-5:1.25rem;
   --fs-6:1.25rem;
+  --line-margin: 1.5rem;
   --line-height-headings: 1.1;
   --line-height-base: 1.7;
 }
 @media screen and (max-width: 30rem) {
   .app-post {
     --fs:1.0625rem;
-    --fs-1:2rem;
+    --fs-1:1.75rem;
     --fs-2:1.5rem;
     --fs-3:1.25rem;
     --fs-4:1.125rem;
     --fs-5:1.125rem;
     --fs-6:1.125rem;
+    --line-margin: 1rem;
     --line-height-headings: 1.125;
     --line-height-base: 1.6;
   }
@@ -1324,16 +1336,21 @@ button[type=submit]:active {
   margin: 0 auto;
 }
 .app-post__title {
-  --line-margin: 1rem;
+  margin-bottom: 0;
+}
+.app-post__date {
+  display: inline-flex;
+  margin-bottom: var(--line-margin);
+  color: var(--color-link);
 }
 .app-post__share {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin-bottom: var(--line-margin);
 }
 .app-post__source + .app-post__author {
-  margin-top: 1rem;
+  margin-top: var(--line-margin);
 }
 
 button[data-share] {
@@ -1353,7 +1370,7 @@ button[data-share] + button[data-share] {
   margin-left: 0.5rem;
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 30rem) {
   .app-post figure {
     margin-left: -1rem;
     margin-right: -1rem;
@@ -1362,4 +1379,5 @@ button[data-share] + button[data-share] {
 .app-post figure img {
   max-width: 100%;
   display: block;
+  margin: 0 auto;
 }
