@@ -2,14 +2,16 @@
   url: https://uazmi.org/
   cover: /assets/cover/uazmi.png
   summary: |
-    A news aggregator where you can find out about current events in Ukraine and the world.
+    Design of a site for a news aggregator where you can familiarize yourself with the latest
+     events of Ukraine and the world
 
   content: |
     [UAZMI](https://www.behance.net/gallery/145912525/UAZMI-news-aggregate)
-    - Analyzed competitors and target audience
+    - Conducted analysis of competitors and CA
     - Developed the site architecture and convenient navigation
     - Created a sketch and developed a prototype
     - Developed a clean minimalist design
+    - Selected company colors and fonts
     - Developed &nbsp; [logo book](https://www.behance.net/gallery/145910439/LogoBook-UAZMI)
 
 
@@ -17,73 +19,322 @@
   url: https://barbaricum.org/
   cover: /assets/cover/barbaricum.png
   summary: |
-    Educational research laboratory of archaeological research.
+    Site design for an educational research laboratory of archaeological research
 
   content: |
     [BARBARICUM](https://www.behance.net/gallery/146024101/BARBARICUM)
     - Developed the site architecture and convenient navigation
     - Created a sketch and developed a prototype
     - Developed a clean minimalist design
+    - Selected company colors and fonts
+    - Picked up and processed the photo
     - Developed &nbsp; [logo book](https://www.behance.net/gallery/146010547/Logobook-Barbaricum)
 
 
-- title: Policlinika Simya
+- title: Family Polyclinic
   url: https://poliklinikasimya.com/
-  cover: /assets/cover/policlinica.png
+  cover: /assets/cover/policlinikaweb.png
   summary: |
-    A modern medical center for the whole family.
+    Landing page design of a modern private medical facility for the whole family
 
   content: |
-    [Policlinika Simya](https://www.behance.net/gallery/137886987/UIUX-Design-polklnka-smja)
-    - Conducted analysis of direct competitors and target audience
-    - Developed the site architecture and convenient navigation
-    - Developed a prototype, design, adaptive
-    - Picked up colors, painted a set of icons
+    [Family Polyclinic](https://www.behance.net/gallery/137886987/UIUX-Design-polklnka-smja)
+    - Analyzed competitors and target audience
+    - Developed page architecture and convenient navigation
+    - Picked up the colors, drew the graphics
+    - Picked up and processed the photo
+    - Wrote the text content
     - Created materials for filling social networks
-    - Developed &nbsp; [brand book](https://romasheva.com/files/pdf/policlinica-brandbook.en.pdf).
+    - Developed &nbsp; [brand book](https://romasheva.com/files/pdf/policlinica-brandbook.pdf).
+
+
+- title: AMAZINGLY
+  url: https://www.behance.net/gallery/141260313/Amazingly
+  cover: /assets/cover/amazingly.png
+  summary: |
+    Concept design of the site for finding masters of the beauty field
+
+  content: |
+    [Amazingly](https://www.behance.net/gallery/141260313/Amazingly)
+    - Analyzed competitors and target audience
+    - Created a mental profile of visitors
+    - Developed the site architecture and convenient navigation
+    - Selected company colors and fonts
+    - Picked up and processed the photo
+    - Developed the design  
 
 
 - title: Magic Room
   url: https://www.behance.net/gallery/145595605/Magic-Room
-  cover: /assets/cover/magiroom.png
+  cover: /assets/cover/magicroom.png
   summary: |
-    A private company engaged in repair and arrangement of children's rooms.
+    Landing page design for a Ukrainian brand
+    furniture and decor for furnishing children's rooms.
 
   content: |
     [Magic Room](https://www.behance.net/gallery/145595605/Magic-Room)
-    - Conducted analysis of direct competitors and target audience
+    - Analyzed competitors and target audience
     - Created a mental profile of the visitor
     - Developed the site architecture and convenient navigation
-    - Developed a prototype
-    - She developed the design and adaptations
+    - Selected company colors and fonts
+    - Picked up and processed the photo
+    - Developed the design and adaptations
 
 
-- title: AMAZYNGLI
-  url: https://www.behance.net/gallery/141260313/Amazingly
-  cover: /assets/cover/amazyngli.png
+- title: DELAVEGA
+  url: https://www.behance.net/gallery/171907971/Concept-redesign-DELAVEGA
+  cover: /assets/cover/delavega.png
   summary: |
-    Design concept for search and selection service masters from the beauty field.
+    Landing page design for a Ukrainian manufacturer of upholstered furniture
 
   content: |
-    [Amazyngli](https://www.behance.net/gallery/141260313/Amazingly)
-    - Conducted analysis of direct competitors and target audience
-    - Created a mental profile of visitors
-    - Developed the site architecture and convenient navigation
-    - Developed a prototype
-    - Picked up the colors
-    - Developed the initial design
+    [DELAVEGA](https://www.behance.net/gallery/171907971/Concept-redesign-DELAVEGA)
+    - Analyzed competitors and target audience
+    - Developed the page architecture
+    - Selected company colors and fonts
+    - Updated the logo design
+    - Picked up and processed the photo
+    - Developed the design
+
+
+- title: CATS KYIV
+  url: https://www.behance.net/gallery/175439371/Animal-shelter-CATSKYIV
+  cover: /assets/cover/catskyiv.png
+  summary: |
+    Page design to draw attention to a cat shelter in the city of Kyiv
+
+  content: |
+    [CATS KYIV](https://www.behance.net/gallery/175439371/Animal-shelter-CATSKYIV)
+    - Created the logo design
+    - Wrote the text content
+    - Selected and processed the photo
+    - Created the page design
+
+
+- title: ARCHITECT
+  url: https://dribbble.com/shots/22279552-ARCHITECT
+  cover: /assets/cover/architect.png
+  summary: |
+    Page design for a studio that creates a design solution for your interior
+
+  content: |
+    [ARCHITECT](https://dribbble.com/shots/22279552-ARCHITECT)
+    - Created the logo design
+    - Wrote the text content
+    - Selected and processed the photo
+    - Created the page design
 
 
 - title: JUST EASY
-  url: https://dribbble.com/shots/19028977-JustEasy
-  cover: /assets/cover/justeasy.png
+  url: https://dribbble.com/shots/20816864-Home-Page-from-Sport-Marathon
+  cover: /assets/cover/justeasyweb.png
   summary: |
-    Mobile application design concept.
+    Design of the main page for registration for a sports marathon
 
   content: |
-    [JustEasy](https://dribbble.com/shots/19028977-JustEasy)
-    - Structure design and navigation
-    - User interface
-    - Onboarding and user script
-    - Prototype
-    - Design concept
+    [JUST EASY](https://dribbble.com/shots/20816864-Home-Page-from-Sport-Marathon)
+    - Created the logo design
+    - Wrote the text content
+    - Selected and processed the photo
+    - Created the page design
+
+
+- title: JUST EASY
+  url: https://www.behance.net/gallery/150970865/Concept-design-of-a-mobile-application
+  cover: /assets/cover/justeasymob.png
+  summary: |
+    Concept design of a mobile application for sports and water balance control
+
+  content: |
+    [JUST EASY](https://www.behance.net/gallery/150970865/Concept-design-of-a-mobile-application)
+    - Thought out the structure of the application
+    - Picked up the necessary functionality
+    - I chose company fonts and colors
+    - I drew graphics
+
+
+- title: LASHMAKER
+  url: https://dribbble.com/shots/20816837-Home-Page-from-LASHMAKER
+  cover: /assets/cover/lashmaker.png
+  summary: |
+    Page design for a professional lash maker
+
+  content: |
+    [LASHMAKER](https://dribbble.com/shots/20816837-Home-Page-from-LASHMAKER)
+    - I chose branded fonts
+    - Wrote the text content
+    - Created the logo design
+    - Picked up and processed the photo
+
+
+- title: The Ordinary
+  url: https://dribbble.com/shots/20816886-Home-Page-from-Cosmetic
+  cover: /assets/cover/ordinary.png
+  summary: |
+    Concept redesign of the main page of a popular cosmetic brand
+
+  content: |
+    [The Ordinary](https://dribbble.com/shots/20816886-Home-Page-from-Cosmetic)
+    - I chose branded fonts
+    - Wrote the text content
+    - Created the logo design
+    - Picked up and processed the photo
+
+
+- title: SATTAVA
+  url: https://dribbble.com/shots/20408037-SATTAVA
+  cover: /assets/cover/sattava.png
+  summary: |
+    Design of the mobile version of the page for the Ukrainian brand of handmade candles
+
+  content: |
+    [SATTAVA](https://dribbble.com/shots/20408037-SATTAVA)
+    - Created the logo design
+    - I chose branded fonts
+    - Created a logo design
+    - Picked up and processed the photo
+
+
+- title: Сhildren Baedtime
+  url: https://www.behance.net/gallery/166793137/Children-beadtiam-mobile-app-audio-book-for-kids
+  cover: /assets/cover/childrenbook.png
+  summary: |
+    Concept design of a mobile application with audio books for children
+
+  content: |
+    [Сhildren Baedtime](https://www.behance.net/gallery/166793137/Children-beadtiam-mobile-app-audio-book-for-kids)
+    - Generated the image with the help of AI
+    - I chose branded fonts
+    - Created the logo design
+    - Thought out the structure of the application
+    - Picked up the necessary functionality
+
+
+- title: Tap Link
+  url: https://www.behance.net/gallery/172146899/Design-Tap-Link-by-Dobrik-Alina-
+  cover: /assets/cover/taplink.png
+  summary: |
+    Tap link concept design for a practicing psychologist
+
+  content: |
+    [Tap Link](https://www.behance.net/gallery/172146899/Design-Tap-Link-by-Dobrik-Alina-)
+    - Thought out the structure
+    - I chose fonts and colors
+    - Wrote the text content
+
+
+- title: Photographer
+  url: https://dribbble.com/shots/20816951-Landing-page-from-photographer
+  cover: /assets/cover/photographer.png
+  summary: |
+    Design mobile versions of the photo page to introduce clients to its services
+
+  content: |
+    [Photographer](https://dribbble.com/shots/20816951-Landing-page-from-photographer)
+    - Thought out the structure
+    - I chose fonts and colors
+    - Wrote the text content
+    - Picked up and processed the photo
+
+
+- title: Ethno Touch
+  url: https://dribbble.com/shots/21814473-ETHNO-TOUCH
+  cover: /assets/cover/ethnotouch.png
+  summary: |
+    Design of a set of badges for a Ukrainian brand of ethnic clothing 
+
+  content: |
+    [Ethno Touch](https://dribbble.com/shots/21814473-ETHNO-TOUCH)
+    - I chose a uniform
+    - Created a graphic element for the logo
+    - Picked up the colors and font
+
+
+- title: CERAMICS
+  url: https://dribbble.com/shots/22085058--Write-what-you-know
+  cover: /assets/cover/ceramics.png
+  summary: |
+    Design of a poster-invitation to a master class on pottery
+
+  content: |
+    [CERAMICS](https://dribbble.com/shots/22085058--Write-what-you-know)
+    - I chose the colors and the font
+    - Created the design
+
+
+- title: Cover Book
+  url: https://dribbble.com/shots/21767434-Cover-design-for-a-children-s-book
+  cover: /assets/cover/coverbook.png
+  summary: |
+    Cover design for a children's book
+
+  content: |
+    [Cover Book](https://dribbble.com/shots/21767434-Cover-design-for-a-children-s-book)
+    - I chose colors and fonts
+    - I picked up an illustration
+    - Wrote an abstract
+    - Created the design
+
+
+- title: Cover Magazin
+  url: https://dribbble.com/shots/22279568-IN-MY-HEARD
+  cover: /assets/cover/coverjornal.png
+  summary: |
+    Cover design for In My Heart glossy magazine
+
+  content: |
+    [Cover Magazin](https://dribbble.com/shots/22279568-IN-MY-HEARD)
+    - I chose colors and fonts
+    - Picked up a photo
+    - Created the design
+
+
+- title: Calendar
+  url: https://dribbble.com/shots/20421307-CALENDAR-2023
+  cover: /assets/cover/calendar.png
+  summary: |
+    Design of calendar pages for 2023
+
+  content: |
+    [Calendar](https://dribbble.com/shots/20421307-CALENDAR-2023)
+    - I chose colors and fonts
+    - Picked up a photo
+    - Created the design
+
+
+- title: Yoga Fest
+  url: https://dribbble.com/shots/17038138-Yuga-Fest
+  cover: /assets/cover/yogafest.png
+  summary: |
+    Yoga festival print brochure design
+
+  content: |
+    [Yoga Fest](https://dribbble.com/shots/17038138-Yuga-Fest)
+    - I chose colors and fonts
+    - Picked up a photo
+    - Created the design
+
+
+- title: Brand Book
+  url: https://dribbble.com/shots/22279654-POLICLINICA-SIM-Y
+  cover: /assets/cover/yogafest.png
+  summary: |
+    A guide to the use of corporate logo colors and fonts
+
+  content: |
+    [Brand Book](https://dribbble.com/shots/22279654-POLICLINICA-SIM-Y)
+    - Created the logo
+    - Described the rules for using the logo
+    - Chosen and described company colors
+    - I chose and described company fonts
+    - Created a branded set of icons
+
+
+- title: LOGOFOLIO
+  url: https://www.behance.net/gallery/177701457/LOGOFOLIO
+  cover: /assets/cover/logofolio.png
+  summary: |
+    Here are the logos I created
+
+  content: |
+    [LOGOFOLIO](https://www.behance.net/gallery/177701457/LOGOFOLIO)
