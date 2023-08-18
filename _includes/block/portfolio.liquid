@@ -19,8 +19,19 @@
         <div class="app-card__back">
             <div class="app-card__inner">
                 <div class="app-card__wrapper" data-flip="">
+                    <h3>{{ item.title }}</h3>
                     {{ item.content | markdownify }}
                 </div>
+                {% if item.links %}
+                <div class="app-card__links">
+                    {% for item in item.links  %}
+                        <a href="{{ item.url }}" target="_blank" title="{{ item.label | capitalize }}">
+                            <div class="icon medium c-{{ item.icon }}">{% include icon name=item.icon %}</div>
+                            {{ item.label }}
+                        </a>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>

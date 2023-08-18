@@ -61,7 +61,6 @@
     flex-direction: column;
   }
 
-
   &__date {
     font-size: var(--font-size-small);
     color: var(--color-link);
@@ -70,7 +69,7 @@
 
   &__title {
     --fs-h: var(--fs-5);
-    --line-margin: 0rem;
+    --line-margin: 0.5rem;
   }
 
   &__summary {
