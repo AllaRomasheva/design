@@ -1277,7 +1277,7 @@ button[type=submit]:active {
     transform: none;
   }
   .app-card__wrapper h3 {
-    font-size: var(--fs-5);
+    display: none;
   }
   .app-card__content {
     transform-style: inherit;
