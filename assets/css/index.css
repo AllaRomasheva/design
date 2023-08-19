@@ -671,7 +671,6 @@ input:valid, select:valid, textarea:valid {
 input, button {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   text-transform: none;
 }
@@ -781,7 +780,7 @@ button[type=button]:active, button[type=submit]:active {
 }
 @media screen and (max-width: 48rem) {
   .browser__window {
-    --browser-height: 100%;
+    --browser-height: 86%;
   }
 }
 .browser__document {
@@ -892,7 +891,6 @@ button[type=button]:active, button[type=submit]:active {
 .app-header {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
