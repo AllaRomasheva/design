@@ -142,6 +142,7 @@ var scroller = function scroller() {
   //     html.style.setProperty('--progress',String(progress));
   // },100)
 
+  html.style.setProperty('--progress', String(progress));
   html.style.setProperty('--window-height', window.innerHeight + 'px');
   html.classList.toggle('scroll', scrollTop > 0);
   html.classList.toggle('scroll-bottom', scrollTop > 0 && scroll < scrollTop);
