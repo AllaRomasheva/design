@@ -10,13 +10,13 @@ const idle = (cb,ttl) => {
     cb.idle = setTimeout(cb,ttl)
 }
 
+
 const scroller = () => {
     let scrollTop = container.scrollTop;
     let progress  = parseFloat(scrollTop / ((html.scrollHeight - html.clientHeight) / 100) ).toFixed(2);
     // idle(()=>{
     //     html.style.setProperty('--progress',String(progress));
-    // },300)
-    html.style.setProperty('--progress',String(progress));
+    // },100)
     html.style.setProperty('--window-height', window.innerHeight + 'px')
     html.classList.toggle('scroll', scrollTop > 0);
     html.classList.toggle('scroll-bottom', scrollTop > 0 && (scroll < scrollTop));

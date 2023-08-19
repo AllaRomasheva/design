@@ -138,10 +138,10 @@ var idle = function idle(cb, ttl) {
 
 var scroller = function scroller() {
   var scrollTop = container.scrollTop;
-  var progress = parseFloat(scrollTop / ((html.scrollHeight - html.clientHeight) / 100)).toFixed(2);
-  idle(function () {
-    html.style.setProperty('--progress', String(progress));
-  }, 300);
+  var progress = parseFloat(scrollTop / ((html.scrollHeight - html.clientHeight) / 100)).toFixed(2); // idle(()=>{
+  //     html.style.setProperty('--progress',String(progress));
+  // },100)
+
   html.style.setProperty('--window-height', window.innerHeight + 'px');
   html.classList.toggle('scroll', scrollTop > 0);
   html.classList.toggle('scroll-bottom', scrollTop > 0 && scroll < scrollTop);
