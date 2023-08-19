@@ -19,17 +19,25 @@ option{
   line-height:var(--line-height-base);
 }
 
+:root{
+  --form-control-transition:border-color 0.3s ease-in-out,color 0.3s ease-in-out,background-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+}
+
 input,button,select,textarea{
+  --default-padding: .5rem .75rem;
+  --default-font-size: 1rem;
   appearance:none;
-  transition:all 0.3s ease-in-out;
+  transition:var(--form-control-transition);
   border-radius: .5rem;
   display:inline-flex;
   width:100%;
   border:2px solid #dfdfdf;
   background-color:#fff;
-  padding:.5rem .75rem;
   outline:0;
-  font-size:1rem;
+  text-decoration: none;
+  color:inherit;
+  padding:var(--form-padding, var(--default-padding) );
+  font-size:var(--form-font-size,1rem);
   font-family:var(--font-family-base);
   font-weight:var(--font-weight-normal);
   line-height:var(--line-height-base);
@@ -48,6 +56,7 @@ input,select,textarea{
 }
 
 input,button{
+  user-select: none;
   text-transform: none;
 }
 
@@ -85,6 +94,9 @@ button[type="submit"]{
     color:var(--color-info);
     box-shadow:0 0 0 .1875rem var(--color-info-alpha);
   }
+}
+
+button[type="button"],button[type="submit"]{
   &:active{
     position: relative;
     top: .125rem;

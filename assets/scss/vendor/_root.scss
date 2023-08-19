@@ -46,12 +46,14 @@
 :root {
   --gap: 2rem;
   --spacer:2rem;
+  --spacer-sm:1rem;
 }
 
 @include phone-xs {
   :root {
     --gap: 1rem;
     --spacer:1rem;
+    --spacer-sm:0.5rem;
   }
 }
 
