@@ -707,7 +707,6 @@ button[type=submit]:active {
   border-radius: 0.5rem;
   border: 1px solid #f9f9f9;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-  transition: transform 0.6s ease-in-out;
 }
 .browser__buttons {
   padding: 0 0.25rem;
@@ -796,10 +795,6 @@ button[type=submit]:active {
   .browser__summary {
     --fs-h:var(--fs-6);
   }
-}
-
-.scroll .browser {
-  transform: perspective(64rem) rotateX(18deg);
 }
 
 .app-header {
@@ -1029,6 +1024,7 @@ button[type=submit]:active {
   content: "";
   display: block;
   width: calc(1% * var(--progress, 0));
+  transition: width 0.3s 0.3s linear;
   height: 0.125rem;
   background: linear-gradient(45deg, var(--color-info), var(--color-pink) 80%);
 }
