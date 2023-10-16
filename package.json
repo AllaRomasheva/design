@@ -1,11 +1,8 @@
 {
   "name": "romasheva.design",
   "dependencies": {
-    "ipsp-js-sdk": "^2.0.7",
-    "jquery.control": "github:kosatyi/jquery.control",
     "sass": "^1.39.0",
-    "smoothscroll-polyfill": "^0.4.4",
-    "typed.js": "^2.0.11"
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "del": "^5.1.0",
