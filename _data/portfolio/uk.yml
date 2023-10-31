@@ -370,32 +370,28 @@
       label: Showcase
       url: https://dribbble.com/shots/17038138-Yuga-Fest
 
-- title: Brand Book
-  url: https://dribbble.com/shots/22279654-POLICLINICA-SIM-Y
-  cover: /assets/cover/policlinikabrand.png
+- title: Denart_Mua
+  url: https://dribbble.com/shots/22582585-DENART-MUA
+  cover: /assets/cover/denart.png
   summary: |
-    Посібник з використання фірмового логотипу кольорів та шрифтів 
+    Дизайн сертифіката для майстра візажу
 
   content: |
-    - Створено логотип
-    - Описано правила використання лого
-    - Обрано і описала фірмові кольори 
-    - Обрано і описала фірмові шрифти 
-    - Створено фірмовий сет іконок
+
   links:
     - icon: dribbble
       label: Showcase
-      url: https://dribbble.com/shots/22279654-POLICLINICA-SIM-Y
+      url: https://dribbble.com/shots/22582585-DENART-MUA
 
-- title: Logo Folio
-  url: https://www.behance.net/gallery/177701457/LOGOFOLIO
-  cover: /assets/cover/logofolio.png
+- title: Stikers set
+  url: https://dribbble.com/shots/22377678-Sticker-pack-for-the-Independence-Day-of-Ukraine
+  cover: /assets/cover/stikers.png
   summary: |
-    Тут зібрані створені мною логотипи
+    Стікерпак до Дня Незалежності України
 
   content:
 
   links:
-    - icon: behance
+    - icon: dribbble
       label: Showcase
-      url: https://www.behance.net/gallery/177701457/LOGOFOLIO
+      url: https://dribbble.com/shots/22377678-Sticker-pack-for-the-Independence-Day-of-Ukraine
