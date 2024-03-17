@@ -1163,7 +1163,7 @@ button[type=button]:active, button[type=submit]:active {
   content: "";
   transition: border-radius 0.3s ease-in-out;
   border-radius: var(--entry-rounded);
-  background: linear-gradient(40deg, rgba(78, 76, 189, 0.3), rgba(186, 15, 81, 0.3));
+  background: linear-gradient(40deg, rgba(77, 77, 98, 0.3), rgba(96, 64, 73, 0.3));
   z-index: 3;
 }
 .app-entry__image {
