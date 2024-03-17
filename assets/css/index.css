@@ -117,7 +117,7 @@
   }
 }
 :root {
-  --header-background: transparent;
+  --header-background: #ffffff;
   --header-title-visibility: block;
   --header-shadow: none;
   --header-height: 5rem;
