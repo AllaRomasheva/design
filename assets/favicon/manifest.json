@@ -8,8 +8,8 @@
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/?homescreen=1",
-  "background_color": "#4e4cbd",
-  "theme_color": "#4e4cbd",
+  "background_color": "#202020",
+  "theme_color": "#202020",
   "icons": [
     {
       "src": "https://romasheva.design/assets/favicon/android-chrome-36x36.png",

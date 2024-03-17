@@ -6,7 +6,7 @@ const through = require('through2');
 const fs = require('fs');
 
 gulp.task('favicon', function(){
-    const color = '#4e4cbd';
+    const color = '#202020';
     const filename = 'favicon.html';
     const iconFile = 'assets/favicon.svg';
     const iconPath = 'assets/favicon';
