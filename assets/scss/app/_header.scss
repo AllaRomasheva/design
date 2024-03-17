@@ -53,13 +53,15 @@
     svg {
       height: var(--header-icon);
       width: var(--header-icon);
-      fill: var(--color-link);
+      fill: var(--color-primary);
     }
     a {
       @extend %flex-row;
       @extend %flex-middle;
     }
   }
+
+
 
   &__title {
     margin-left: .5rem;

@@ -1087,7 +1087,7 @@ button[type=button]:active, button[type=submit]:active {
 .app-header__logo svg {
   height: var(--header-icon);
   width: var(--header-icon);
-  fill: var(--color-link);
+  fill: var(--color-primary);
 }
 .app-header__title {
   margin-left: 0.5rem;
