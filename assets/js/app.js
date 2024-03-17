@@ -165,8 +165,6 @@ scroller();
 },{"../utils/debounce":7}],5:[function(require,module,exports){
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
 var _smoothscrollPolyfill = _interopRequireDefault(require("smoothscroll-polyfill"));
 
 require("./component/hashchange");
@@ -177,9 +175,11 @@ require("./component/card");
 
 require("./component/cover");
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 _smoothscrollPolyfill["default"].polyfill();
 
-},{"./component/card":1,"./component/cover":2,"./component/hashchange":3,"./component/scroll":4,"@babel/runtime/helpers/interopRequireDefault":9,"smoothscroll-polyfill":10}],6:[function(require,module,exports){
+},{"./component/card":1,"./component/cover":2,"./component/hashchange":3,"./component/scroll":4,"smoothscroll-polyfill":9}],6:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -240,15 +240,6 @@ function find(selector, parent) {
 }
 
 },{}],9:[function(require,module,exports){
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-module.exports = _interopRequireDefault;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}],10:[function(require,module,exports){
 /* smoothscroll v0.4.4 - 2019 - Dustan Kasten, Jeremias Menichelli - MIT License */
 (function () {
   'use strict';
