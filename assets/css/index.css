@@ -1077,7 +1077,7 @@ button[type=button]:active, button[type=submit]:active {
   width: calc(1% * var(--progress, 0));
   transition: width 0.3s 0.3s linear;
   height: 0.125rem;
-  background: linear-gradient(45deg, var(--color-info), var(--color-pink) 80%);
+  background: linear-gradient(45deg, #4d4d62, #604049 80%);
 }
 .app-header__logo {
   --link-color-hover: var(--color-primary);

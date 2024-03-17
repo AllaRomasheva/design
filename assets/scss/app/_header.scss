@@ -37,7 +37,7 @@
       width: calc(1% * var(--progress, 0));
       transition: width 0.3s 0.3s linear;
       height: 0.125rem;
-      background: linear-gradient(45deg, var(--color-info), var(--color-pink) 80%);
+      background: linear-gradient(45deg, #4d4d62, #604049 80%);
     }
   }
 
