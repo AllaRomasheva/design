@@ -1279,6 +1279,7 @@ button[type=button]:active, button[type=submit]:active {
 }
 .app-card__summary {
   overflow-y: auto;
+  line-height: var(--line-height-headings);
 }
 .app-card__action {
   margin-top: auto;
